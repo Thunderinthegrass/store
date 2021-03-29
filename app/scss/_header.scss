@@ -1,0 +1,91 @@
+//header-top----------------------------
+.header {
+  &__nav {
+    &.header__nav {
+      &--right {
+        margin-left: auto;
+      }
+    }
+  }
+  &__top {
+    padding: 10px 0;
+    background: $athens-gray;
+  }
+  &__main {
+    padding: 25px 0;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+  &__phones {
+    display: flex;
+    .header__phone {
+      color: $tundora;
+      display: block;
+      font-size: 16px;
+      font-weight: 600;
+      margin-right: 30px;
+      white-space: nowrap;
+    }
+    .m0 {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    color: $tundora;
+    font-size: 12px;
+    line-height: 1.67;
+  }
+  &__address {
+    display: flex;
+    position: relative;
+    padding-left: 30px;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 21px;
+      width: 15px;
+      background-image: url(../img/nav.svg);
+    }
+  }
+  &__shop {
+    display: flex;
+  }
+  &-goods {
+    margin-right: 10px;
+    &__price {
+      position: relative;
+      color: $tundora;
+      display: block;
+      font-size: 16px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    &__count {
+      font-size: 12px;
+      line-height: 1.67;
+      display: block;
+    }
+  }
+  &-basket__icon {
+    height: 30px;
+    width: 30px;
+    background-image: url(../img/cart.svg);
+  }
+}
+.header-nav {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+//header-main----------------------------------------
