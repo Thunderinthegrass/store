@@ -1,52 +1,9 @@
-// @font-face {
-//   font-family: "Open Sans";
-//   src: local("Open Sans Light"), local("OpenSans-Light"), url(../fonts/opensanslight.woff2) format("woff2"),
-//     url(../fonts/opensanslight.woff) format("woff"),
-//     url(../fonts/opensanslight.ttf);
-//   font-weight: 300;
-//   font-display: swap;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: "Open Sans";
-//   src: local("Open Sans"), local("OpenSans"), url(../fonts/opensansregular.woff2) format("woff2"),
-//     url(../fonts/opensansregular.woff) format("woff"),
-//     url(../fonts/opensansregular.ttf);
-//   font-weight: 400;
-//   font-display: swap;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: "Open Sans";
-//   src: local("Open Sans Semibold"), local("OpenSans-Semibold"),
-//     url(../fonts/opensanssemibold.woff2) format("woff2"),
-//     url(../fonts/opensanssemibold.woff) format("woff"),
-//     url(../fonts/opensanssemibold.ttf);
-//   font-weight: 600;
-//   font-display: swap;
-//   font-style: normal;
-// }
-
-@font-face {
-  font-family: "Open Sans";
-  src: local("Open Sans Bold"), local("OpenSans-Light"),
-    url(../fonts/opensansbold.woff2) format("woff2"),
-    url(../fonts/opensansbold.woff) format("woff"),
-    url(../fonts/opensansbold.ttf);
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-}
-
 @mixin font-face($font-name, $path, $weight: normal, $style: normal) {
   @font-face {
     font-family: quote($font-name);
     src:
       url(#{$path}.woff) format("woff"),
-      url(#{$path}.woff2) format("woff2"),
-      url(#{$path}.ttf) format("truetype");
+      url(#{$path}.woff2) format("woff2");
     font-weight: $weight;
     font-style: $style;
   }

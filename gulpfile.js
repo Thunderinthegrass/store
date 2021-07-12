@@ -21,7 +21,7 @@ function cleanDist() {
 }
 
 function pug2html() {
-  return src('app/pug/*.pug')
+  return src('app/pug/**/**/*.pug')
     .pipe(pug({
       pretty:true
     }))
@@ -83,7 +83,7 @@ function build() {
 function watching() {
   watch(['app/scss/**/*.scss'], styles);
   watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
-  watch(['app/pug/*pug'], pug2html);
+  watch(['app/pug/**/*pug'], pug2html);
   watch(['app/*html']).on('change', browserSync.reload);
 }
 
