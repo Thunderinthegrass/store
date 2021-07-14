@@ -2,7 +2,9 @@
 @import "fonts";
 @import "global";
 @import "media";
-@import "header";
+@import "modules/header/header";
 @import 'small-block';
+@import 'modules/navigation/navigation.scss';
+// @import 'mixins.scss';
 
 

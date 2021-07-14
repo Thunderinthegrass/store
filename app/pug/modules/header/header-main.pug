@@ -2,22 +2,21 @@
   .container
     .header__content
       .header__logo.logo 
-        img(src="img/logo.png", alt="logo")
+        img(src="img/png/logo.png", alt="Логотип").logo__img
       .header__phones 
         .header__item 
           a(href="tel:82345678910").header__phone 8 (123) 456-78-91 
           a(href="").header__link  Заказать звонок 
         .header__item 
-          a(href="tel:82345678910").header__phone.m0 8 (123) 456-78-91 
-          a(href="").header__link  Звонок бесплатный
+          a(href="tel:82345678910").header__phone 8 (123) 456-78-91 
+          span.header__description  Звонок бесплатный
       .header__address.header-address
-        span.header-address__text Москва, пр-т Степанова, 12 к. 3, павильон № 3/4
-        .header__shop
-          .header-goods 
-            span.header-goods__price 0p
-            span.header-goods__count 0 товаров
-          .header-basket
-            .icon.header-basket__icon
-            span.header-basket__text Корзина
-
-    
+        img(src="img/svg/location.svg", alt="").header-address__icon
+        span.header-address__text Сыктывкар, ул Ломоносова 12
+      .header__shop
+        .header-goods
+          span.header-goods__price 0 р
+          span.header-goods__count 0 товаров
+        .header-basket
+          img(src="img/svg/cart.svg").header-basket__icon
+          span.header-basket__text Корзина
