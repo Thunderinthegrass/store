@@ -34,6 +34,7 @@ html {
 body {
   font-family: "Open Sans", Arial, sans-serif;
   height: 100%;
+  color: #262626;
 }
 
 h1,
@@ -113,6 +114,10 @@ button {
   max-width: 1140px;
   padding: 0 15px;
   width: 100%;
+}
+
+.header {
+  border-bottom: 1px solid #eef2e4;
 }
 
 .header__logo {
@@ -265,6 +270,7 @@ button {
   padding: 0 20px;
   background: #f6f6f6;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 .header-basket__icon {
@@ -276,6 +282,10 @@ button {
 .header-basket__text {
   color: #4b4b4b;
   font-weight: 600;
+}
+
+.header__search {
+  margin-left: auto;
 }
 
 .logo img {
@@ -303,6 +313,91 @@ button {
 
 .header-nav__item:last-child {
   margin-right: 0;
+}
+
+.main-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.main-nav__item {
+  margin-right: 40px;
+}
+
+.main-nav__item:last-child {
+  margin-right: 0;
+}
+
+.main-nav__item:hover .main-nav__link {
+  border-bottom-color: #f74f40;
+}
+
+.main-nav__item:hover .main-nav-dropdown {
+  display: block;
+}
+
+.main-nav__link {
+  border-bottom: 2px solid transparent;
+  display: block;
+  padding: 15px 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.88;
+  color: #4b4b4b;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.main-nav-dropdown {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  padding-top: 10px;
+  background: #fff;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+  display: none;
+}
+
+.main-nav-dropdown__link {
+  color: #262626;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  line-height: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 360px;
+}
+
+.main-nav-dropdown__link:hover {
+  background: #eef2e4;
+  color: #f74f40;
+}
+
+.main-nav-dropdown__link:hover .main-nav-dropdown__icon {
+  background-image: url(../../../img/svg/angle-right-active.svg);
+}
+
+.main-nav-dropdown__icon {
+  background-image: url(../../../img/svg/angle-right.svg);
+  height: 12px;
+  margin-left: auto;
+  width: 8px;
+}
+
+.search__icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
 }
 
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */

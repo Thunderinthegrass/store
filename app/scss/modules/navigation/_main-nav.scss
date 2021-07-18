@@ -1,0 +1,67 @@
+.main-nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  &__item {
+    margin-right: 40px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      .main-nav{
+        &__link{
+          border-bottom-color: $sunset-orange;
+        }
+        &-dropdown {
+          display: block;
+        }
+      }
+    }
+  }
+  &__link {
+    border-bottom: 2px solid transparent;
+    display: block;
+    padding: 15px 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.88;
+    color: $tundora;
+    transition: 0.2s;
+  }
+  &-dropdown {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    padding-top: 10px;
+    background: #fff;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+    display: none;
+    &__list {
+    }
+    &__item {
+    }
+    &__link {
+      color: $mine-shaft;
+      display: flex;
+      padding: 10px;
+      line-height: 20px;
+      align-items: center;
+      width: 360px;
+      &:hover {
+        background: $athens-gray;
+        color: $sunset-orange;
+        .main-nav-dropdown__icon {
+          background-image: url(../../../img/svg/angle-right-active.svg);
+        }
+      }
+    }
+    &__icon {
+      background-image: url(../../../img/svg/angle-right.svg);
+      height: 12px;
+      margin-left: auto;
+      width: 8px;
+    }
+  }
+}
