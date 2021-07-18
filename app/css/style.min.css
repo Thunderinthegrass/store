@@ -365,6 +365,17 @@ button {
   display: none;
 }
 
+.main-nav-dropdown__item {
+  position: relative;
+}
+
+.main-nav-dropdown__item .main-nav-dropdown-item__dropdown {
+  position: absolute;
+  width: 360px;
+  top: 0;
+  right: -100%;
+}
+
 .main-nav-dropdown__link {
   color: #262626;
   display: -webkit-box;

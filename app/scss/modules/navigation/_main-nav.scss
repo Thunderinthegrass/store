@@ -10,8 +10,8 @@
       margin-right: 0;
     }
     &:hover {
-      .main-nav{
-        &__link{
+      .main-nav {
+        &__link {
           border-bottom-color: $sunset-orange;
         }
         &-dropdown {
@@ -41,6 +41,13 @@
     &__list {
     }
     &__item {
+      position: relative;
+      .main-nav-dropdown-item__dropdown {
+        position: absolute;
+        width: 360px;
+        top: 0;
+        right: -100%;
+      }
     }
     &__link {
       color: $mine-shaft;
