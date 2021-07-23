@@ -4,3 +4,10 @@
       include ../main-nav/main-nav.pug
       .header__search.search
         img.search__icon(src="img/svg/search.svg", alt="Поиск")
+        .search__body
+          form.search__form
+            .search__input-wrapper
+              input(placeholder="Я хочу купить...").search__input
+              .search__clear
+                img.search__clear-icon(src="img/svg/close.svg", alt="")
+            input(type="submit" value="Найти").search__btn

@@ -1,6 +1,50 @@
-.search{
-  &__icon{
-      @include size(20px);
-      cursor: pointer;
+.search {
+  &__icon {
+    @include size(20px);
+    cursor: pointer;
+  }
+  &__body {
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.21), 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  }
+  &__form {
+    display: flex;
+    align-items: center;
+  }
+  &__input {
+    height: 50px;
+    line-height: 48px;
+    border: 1px solid $alto;
+    border-radius: 2px 0 0 2px;
+    background: transparent;
+    padding: 0 50px 0 20px;
+    color: $tundora;
+    &::placeholder{
+      color: $placeholder-color;
+    }
+    &-wrapper {
+      position: relative;
+    }
+  }
+  &__clear {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    cursor: pointer;
+  }
+  &__clear-icon {
+    @include size(16px);
+  }
+  &__btn {
+    height: 50px;
+    background: $sunset-orange;
+    border-radius: 0 2px 2px 0;
+    color: #fff;
   }
 }

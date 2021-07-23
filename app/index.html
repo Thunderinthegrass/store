@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,7 @@
     <title>Store</title>
   </head>
   <body>
-    <header class="header">  
+    <header class="header">   
       <div class="header__top">
         <div class="container">
           <div class="header__content">
@@ -54,8 +54,8 @@
             <nav class="header__main-nav main-nav">
               <ul class="main-nav__list">
                 <li class="main-nav__item"><a class="main-nav__link" href="">Самокаты</a>
-                  <div class="main-nav__dropdown">
-                    <div class="main-nav__col">
+                  <div class="main-nav__dropdown-wrapper">
+                    <div class="main-nav__dropdown">
                       <ul class="main-subnav__list">
                         <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты</span>
                             <div class="main-subnav__icon"></div></a>
@@ -64,35 +64,541 @@
                             <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые трехколесные самокаты</span></a></li>
                             <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с большими колесами</span></a></li>
                             <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с надувными колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с надувными колесами</span></a></li>
                           </ul>
                         </li>
                         <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты</span>
-                            <div class="main-subnav__icon"></div></a></li>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с надувными колесами</span></a></li>
+                          </ul>
+                        </li>
                         <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты</span>
-                            <div class="main-subnav__icon"></div></a></li>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты с надувными колесами</span></a></li>
+                          </ul>
+                        </li>
                         <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты</span>
-                            <div class="main-subnav__icon"></div></a></li>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с надувными колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с надувными колесами</span></a></li>
+                          </ul>
+                        </li>
                         <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты</span>
-                            <div class="main-subnav__icon"></div></a></li>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты с надувными колесами</span></a></li>
+                          </ul>
+                        </li>
                         <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Электросамокаты</span>
-                            <div class="main-subnav__icon">   </div></a></li>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные электросамокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские трехколесные электросамокаты </span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Электросамокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Элуктросамокаты с надувными колесами</span></a></li>
+                          </ul>
+                        </li>
                         <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Самокаты с двумя амортизаторами </span>
-                            <div class="main-subnav__icon"></div></a></li>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с двумя амортизаторами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с двумя амортизаторами</span></a></li>
+                          </ul>
+                        </li>
                       </ul>
                     </div>
-                    <div class="main-nav__col"></div>
                   </div>
                 </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="">Беговелы</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="">Велосипеды</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="">Ролики</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="">Скейты</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="">Батуты</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="">Аксессуары и запчасти</a></li>
-                <li class="main-nav__item"><a class="main-nav__link" href="">Ещё</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="">Беговелы</a>
+                  <div class="main-nav__dropdown-wrapper">
+                    <div class="main-nav__dropdown">
+                      <div class="main-nav__col">
+                        <ul class="main-subnav__list">
+                          <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Беговелы</span>
+                              <div class="main-subnav__icon"></div></a>
+                            <ul class="main-subnav__list">
+                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Беговелы большими колесами</span></a></li>
+                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Беговелы надувными колесами</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты</span>
+                              <div class="main-subnav__icon"></div></a>
+                            <ul class="main-subnav__list">
+                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские двухколесные самокаты</span></a></li>
+                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские трехколесные самокаты</span></a></li>
+                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с большими колесами</span></a></li>
+                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с надувными колесами</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты</span>
+                              <div class="main-subnav__icon"></div></a>
+                            <ul class="main-subnav__list">
+                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские двухколесные самокаты</span></a></li>
+                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские трехколесные самокаты</span></a></li>
+                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты с большими колесами</span></a></li>
+                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты с надувными колесами</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты</span>
+                              <div class="main-subnav__icon"></div></a>
+                            <ul class="main-subnav__list">
+                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные двухколесные самокаты</span></a></li>
+                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные трехколесные самокаты</span></a></li>
+                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с большими колесами</span></a></li>
+                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с надувными колесами</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты</span>
+                              <div class="main-subnav__icon"></div></a>
+                            <ul class="main-subnav__list">
+                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые двухколесные самокаты</span></a></li>
+                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые трехколесные самокаты</span></a></li>
+                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты с большими колесами</span></a></li>
+                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты с надувными колесами</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Электросамокаты</span>
+                              <div class="main-subnav__icon"></div></a>
+                            <ul class="main-subnav__list">
+                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные электросамокаты</span></a></li>
+                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские трехколесные электросамокаты </span></a></li>
+                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Электросамокаты с большими колесами</span></a></li>
+                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Элуктросамокаты с надувными колесами</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Самокаты с двумя амортизаторами </span>
+                              <div class="main-subnav__icon"></div></a>
+                            <ul class="main-subnav__list">
+                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с двумя амортизаторами</span></a></li>
+                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с двумя амортизаторами</span></a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="main-nav__col"></div>
+                    </div>
+                  </div>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link" href="">Велосипеды</a>
+                  <div class="main-nav__dropdown-wrapper">
+                    <div class="main-nav__dropdown">
+                      <ul class="main-subnav__list">
+                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты</span>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с надувными колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с надувными колесами</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты</span>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с надувными колесами</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты</span>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты с надувными колесами</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты</span>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с надувными колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с надувными колесами</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты</span>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты с надувными колесами</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Электросамокаты</span>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные электросамокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские трехколесные электросамокаты </span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Электросамокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Элуктросамокаты с надувными колесами</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Самокаты с двумя амортизаторами </span>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с двумя амортизаторами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с двумя амортизаторами</span></a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link" href="">Ролики</a>
+                  <div class="main-nav__dropdown-wrapper">
+                    <div class="main-nav__dropdown">
+                      <ul class="main-subnav__list">
+                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты</span>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с надувными колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с надувными колесами</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты</span>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с надувными колесами</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты</span>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты с надувными колесами</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты</span>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с надувными колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с надувными колесами</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты</span>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты с надувными колесами</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Электросамокаты</span>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные электросамокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские трехколесные электросамокаты </span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Электросамокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Элуктросамокаты с надувными колесами</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Самокаты с двумя амортизаторами </span>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с двумя амортизаторами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с двумя амортизаторами</span></a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link" href="">Скейты</a>
+                  <div class="main-nav__dropdown-wrapper">
+                    <div class="main-nav__dropdown">
+                      <ul class="main-subnav__list">
+                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты</span>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с надувными колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с надувными колесами</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты</span>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с надувными колесами</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты</span>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты с надувными колесами</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты</span>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с надувными колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с надувными колесами</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты</span>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты с надувными колесами</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Электросамокаты</span>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные электросамокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские трехколесные электросамокаты </span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Электросамокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Элуктросамокаты с надувными колесами</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Самокаты с двумя амортизаторами </span>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с двумя амортизаторами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с двумя амортизаторами</span></a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link" href="">Батуты</a>
+                  <div class="main-nav__dropdown-wrapper">
+                    <div class="main-nav__dropdown">
+                      <ul class="main-subnav__list">
+                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты</span>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с надувными колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с надувными колесами</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты</span>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с надувными колесами</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты</span>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты с надувными колесами</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты</span>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с надувными колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с надувными колесами</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты</span>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты с надувными колесами</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Электросамокаты</span>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные электросамокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские трехколесные электросамокаты </span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Электросамокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Элуктросамокаты с надувными колесами</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Самокаты с двумя амортизаторами </span>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с двумя амортизаторами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с двумя амортизаторами</span></a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link" href="">Аксессуары и запчасти</a>
+                  <div class="main-nav__dropdown-wrapper">
+                    <div class="main-nav__dropdown">
+                      <ul class="main-subnav__list">
+                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты</span>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с надувными колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с надувными колесами</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты</span>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с надувными колесами</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты</span>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты с надувными колесами</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты</span>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с надувными колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с надувными колесами</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты</span>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые двухколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые трехколесные самокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты с надувными колесами</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Электросамокаты</span>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные электросамокаты</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские трехколесные электросамокаты </span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Электросамокаты с большими колесами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Элуктросамокаты с надувными колесами</span></a></li>
+                          </ul>
+                        </li>
+                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Самокаты с двумя амортизаторами </span>
+                            <div class="main-subnav__icon"></div></a>
+                          <ul class="main-subnav__list">
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с двумя амортизаторами</span></a></li>
+                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с двумя амортизаторами</span></a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link" href="">Ещё<img class="main-nav__icon" src="img/svg/angle-bottom.svg" alt="Ещё"></a></li>
               </ul>
             </nav>
-            <div class="header__search search"><img class="search__icon" src="img/svg/search.svg" alt="Поиск"></div>
+            <div class="header__search search"><img class="search__icon" src="img/svg/search.svg" alt="Поиск">
+              <div class="search__body">
+                <form class="search__form">
+                  <div class="search__input-wrapper">
+                    <input class="search__input" placeholder="Я хочу купить...">
+                    <div class="search__clear"><img class="search__clear-icon" src="img/svg/close.svg" alt=""></div>
+                  </div>
+                  <input class="search__btn" type="submit" value="Найти">
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>
