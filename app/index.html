@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/libs.min.css">
     <link rel="stylesheet" href="../css/style.min.css">
     <title>Store</title>
   </head>
   <body>
-    <header class="header">   
+    <header class="header">  
       <div class="header__top">
         <div class="container">
           <div class="header__content">
@@ -588,21 +589,50 @@
                 <li class="main-nav__item"><a class="main-nav__link" href="">Ещё<img class="main-nav__icon" src="img/svg/angle-bottom.svg" alt="Ещё"></a></li>
               </ul>
             </nav>
-            <div class="header__search search"><img class="search__icon" src="img/svg/search.svg" alt="Поиск">
-              <div class="search__body">
-                <form class="search__form">
-                  <div class="search__input-wrapper">
-                    <input class="search__input" placeholder="Я хочу купить...">
-                    <div class="search__clear"><img class="search__clear-icon" src="img/svg/close.svg" alt=""></div>
+            <div class="header__search search search--hide"><img class="search__icon search--hide" src="img/svg/search.svg" alt="Поиск">
+              <div class="search__body search--hide">
+                <form class="search__form search--hide">
+                  <div class="search__input-wrapper search--hide">
+                    <input class="search__input search--hide" placeholder="Я хочу купить...">
+                    <div class="search__clear search--hide"><img class="search__clear-icon search--hide" src="img/svg/close.svg" alt=""></div>
                   </div>
-                  <input class="search__btn" type="submit" value="Найти">
+                  <input class="search__btn search--hide" type="submit" value="Найти">
                 </form>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <section class="s-banner">
+        <div class="container">
+          <div class="banner">
+            <div class="banner__navigation banner__navigation--prev"><img class="banner__navigation-icon" src="img/svg/angle.svg" alt=""></div>
+            <div class="banner__navigation banner__navigation--next"><img class="banner__navigation-icon" src="img/svg/angle.svg" alt=""></div>
+            <div class="js-banner">
+              <div class="banner__item">
+                <div class="banner__content">
+                  <div class="banner__body"><span class="banner__title">Кроссовки</span><span class="banner__descr">Отличный подарок бегуну или туристу</span><a class="btn btn--transparent-white btn--round btn--inline" href="">Выбрать </a></div>
+                  <div class="banner__img-wrapper"><img class="banner__img" src="img/png/running.png" alt="Картинка на баннере"></div>
+                </div>
+              </div>
+              <div class="banner__item">
+                <div class="banner__content">
+                  <div class="banner__body"><span class="banner__title">Кроссовки</span><span class="banner__descr">Отличный подарок бегуну или туристу</span><a class="btn btn--transparent-white btn--round btn--inline" href="">Выбрать </a></div>
+                  <div class="banner__img-wrapper"><img class="banner__img" src="img/png/running.png" alt="Картинка на баннере"></div>
+                </div>
+              </div>
+              <div class="banner__item">
+                <div class="banner__content">
+                  <div class="banner__body"><span class="banner__title">Кроссовки</span><span class="banner__descr">Отличный подарок бегуну или туристу</span><a class="btn btn--transparent-white btn--round btn--inline" href="">Выбрать </a></div>
+                  <div class="banner__img-wrapper"><img class="banner__img" src="img/png/running.png" alt="Картинка на баннере"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
-    <script src="js/main.js"> </script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"> </script>
   </body>
 </html>

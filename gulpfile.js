@@ -47,7 +47,6 @@ function images() {
 
 function scripts() {
   return src([
-    'node_modules/jquery/dist/jquery.js',
     'app/js/main.js'
   ])
     .pipe(concat('main.min.js'))
@@ -56,9 +55,21 @@ function scripts() {
     .pipe(browserSync.stream())
 }
 
+function js() {
+  return src([
+    'node_modules/jquery/dist/jquery.js',
+    'node_modules/slick-carousel/slick/slick.js',
+  ])
+  .pipe(concat('libs.min.js'))
+  .pipe(uglify())
+  .pipe(dest('app/js'))
+  .pipe(browserSync.stream())
+}
+
 function styles() {
   return src(['app/scss/style.scss',
-    'node_modules/normalize-css/normalize.css'
+    // 'node_modules/normalize-css/normalize.css',
+    // 'node_modules/slick-carousel/slick/slick.scss'
   ])
     .pipe(scss({ outputStyle: 'expanded' }))
     .pipe(concat('style.min.css'))
@@ -70,11 +81,23 @@ function styles() {
     .pipe(browserSync.stream())
 }
 
+function css() {
+  return src([
+    'node_modules/normalize-css/normalize.css',
+    'node_modules/slick-carousel/slick/slick.scss'
+  ])
+    .pipe(scss({ outputStyle: 'compressed' }))
+    .pipe(concat('libs.min.css'))
+    .pipe(dest('app/css'))
+    .pipe(browserSync.stream())
+}
+
 function build() {
   return src([
     'app/css/style.min.css',
     'app/fonts/**/*',
     'app/js/main.min.js',
+    'app/js/libs.min.js', 
     'app/*html'
   ], { base: 'app' })
     .pipe(dest('dist'))
@@ -88,6 +111,8 @@ function watching() {
 }
 
 exports.styles = styles;
+exports.css = css;
+exports.js = js;
 exports.watching = watching;
 exports.browsersync = browsersync;
 exports.scripts = scripts;
@@ -96,4 +121,4 @@ exports.cleanDist = cleanDist;
 exports.pug2html = pug2html;
 
 exports.build = series(cleanDist, images, build);
-exports.default = parallel(pug2html, styles, scripts, browsersync, watching);
+exports.default = parallel(pug2html, styles, css, scripts, js, browsersync, watching);

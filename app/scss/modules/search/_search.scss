@@ -1,12 +1,23 @@
 .search {
+  position: relative;
+  &.search--open{
+    .search__body{
+      display: block;
+    }
+  }
   &__icon {
     @include size(20px);
     cursor: pointer;
   }
   &__body {
+    position: absolute;
+    right: 0;
+    top: -35px;
     padding: 20px;
     background: #fff;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.21), 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+    display: none;
+    width: 550px;
   }
   &__form {
     display: flex;
@@ -16,15 +27,18 @@
     height: 50px;
     line-height: 48px;
     border: 1px solid $alto;
+    border-right: none;
     border-radius: 2px 0 0 2px;
     background: transparent;
     padding: 0 50px 0 20px;
     color: $tundora;
-    &::placeholder{
+    width: 100%;
+    &::placeholder {
       color: $placeholder-color;
     }
     &-wrapper {
       position: relative;
+      flex: 1;
     }
   }
   &__clear {
@@ -44,7 +58,11 @@
   &__btn {
     height: 50px;
     background: $sunset-orange;
+    border: none;
     border-radius: 0 2px 2px 0;
     color: #fff;
+    padding: 0 15px;
+    font-weight: 700;
+    flex: 0 0 auto;
   }
 }
