@@ -69,7 +69,22 @@ function start() {
       },
     })
   }
+  function tabs() {
+    let tabNav = document.querySelectorAll('.tabs-navigation__item');
+    let tab = document.querySelectorAll('.tab');
+    tabNav.forEach((elem, index) => {
+      elem.addEventListener('click', (e) => {
+        for (let i = 0; i < tabNav.length; i++) {
+          tabNav[i].classList.remove('tabs-navigation__item--active');
+          e.target.classList.add('tabs-navigation__item--active');
+          tab[i].classList.remove('tab--active');
+        }
+        tab[index].classList.add('tab--active');
+      })
+    })
+  }
 
   headerSearch();
   bannerSlider();
+  tabs();
 }

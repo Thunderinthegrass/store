@@ -1,5 +1,39 @@
-.logo{
-  img{
+.logo {
+  img {
     height: 40px;
+  }
+}
+.s-advantages {
+  padding-top: 30px;
+}
+.advantages {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: $solitude;
+  padding: 20px 0;
+  border-radius:2px ;
+}
+.advantage {
+  display: flex;
+  align-items: center;
+  &__icon-wrapper {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    font-size: 18px;
+    line-height: 1.33;
+    color: $mine-shaft;
+  }
+  &__descr {
+    font-size: 12px;
+    line-height: 2;
+    color: $silver-chalice;
   }
 }
