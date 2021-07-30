@@ -1,7 +1,8 @@
 .s-hits{
   padding-top: 30px;
 }
-.hits-navigation{
+.hits{
+&-navigation{
   display: flex;
   align-items: center;
   &__item{
@@ -18,4 +19,12 @@
       border-bottom-color: $sunset-orange;
     }
   }
+}
+&__body{
+  padding-top: 20px;
+}
+}
+.js-products-line-slider{
+  display: flex;
+  justify-content: space-between;
 }

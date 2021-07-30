@@ -69,6 +69,16 @@ function start() {
       },
     })
   }
+  function productPrevSlider() {
+    $('.product-prev__slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true,
+      arrows: false,
+      dots: true,
+      // appendDots: '.product-prev__colors',
+    })
+  }
   function tabs() {
     let tabNav = document.querySelectorAll('.tabs-navigation__item');
     let tab = document.querySelectorAll('.tab');
@@ -86,5 +96,6 @@ function start() {
 
   headerSearch();
   bannerSlider();
+  productPrevSlider();
   tabs();
 }
