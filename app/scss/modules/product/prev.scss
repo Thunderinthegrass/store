@@ -1,34 +1,32 @@
-.product-prev{
+.product-prev {
   padding: 20px;
   padding-top: 190px;
   position: relative;
-  transition: all linear .2s;
-  &:hover{
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.06);
+  transition: all linear 0.2s;
+  &:hover {
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
-  &__header{
+  &__header {
     height: 160px;
     position: absolute;
     top: 20px;
     left: 20px;
     right: 20px;
   }
-  &__slider{
-
-  }
-  &__img-wrapper{
+  &__img-wrapper {
     text-align: center;
   }
-  &__img{
+  &__img {
     max-height: 160px;
-    // max-width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
   }
-  &__body{
-    padding-top: 90px;
+  &__body {
+    padding-top: 60px;
     position: relative;
     margin-bottom: 20px;
   }
-  &__info{
+  &__info {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -36,27 +34,49 @@
     left: 0;
     right: 0;
   }
-  &__title{
+  &__title {
     line-height: 1.43;
     font-weight: 600;
   }
-  &__price{
+  &__price {
     display: flex;
     align-items: baseline;
     margin-bottom: 20px;
-    &-current{
+    &-current {
       font-size: 20px;
       font-weight: 600;
       color: $sunset-orange;
       margin-right: 10px;
     }
-    &-old{
+    &-old {
       font-size: 13px;
       text-decoration: line-through;
       color: $tundora;
     }
   }
-  .btn{
+  &__colors{
+    display: flex;
+    justify-content: center;
+    .slick-dots{
+      display: flex;
+      li{
+        border: 1px solid transparent;
+        border-radius: 1px;
+        padding: 2px;
+        &.slick-active{
+          border-color: $sunset-orange;
+        }
+      }
+    }
+  }
+  &__color{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 1px;
+    outline: none;
+  }
+  .btn {
     width: 100%;
   }
 }

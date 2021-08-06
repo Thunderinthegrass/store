@@ -16,7 +16,7 @@ function start() {
           if (parentList.offsetHeight < navHeight) {
             parentList.style.height = `${navHeight}px`;
           }
-          else{
+          else {
             elem.children[1].style.height = `${mainNavDropdown.offsetHeight}px`;
           }
         }
@@ -39,14 +39,14 @@ function start() {
     }
     function clearSearchForm() {
       let searchClear = document.querySelector('.search__clear');
-      searchClear.addEventListener('click', () => document.querySelector('.search__input').value = ''); 
+      searchClear.addEventListener('click', () => document.querySelector('.search__input').value = '');
     }
     function searchHide() {
       document.addEventListener('click', (e) => {
         if (search.classList.contains('search--open')) {
           if ((e.target.classList.contains('search--hide')) == false) {
-          search.classList.remove('search--open');
-        }
+            search.classList.remove('search--open');
+          }
         }
       })
     }
@@ -54,7 +54,7 @@ function start() {
     openSearchForm();
     clearSearchForm();
     searchHide();
-  
+
   }
   function bannerSlider() {
     $('.js-banner').slick({
@@ -64,19 +64,36 @@ function start() {
       prevArrow: '.banner__navigation--prev',
       nextArrow: '.banner__navigation--next',
       dots: true,
-      customPaging : function(slider, i) {
+      fade: true,
+      customPaging: function (slider, i) {
         return '<a class="banner__dot"></a>';
       },
     })
   }
   function productPrevSlider() {
-    $('.product-prev__slider').slick({
-      slidesToShow: 1,
+    $('.product-prev__slider').each(function (idx) {
+      let carouselId = "carousel" + idx;
+      this.closest('.product-prev').id = carouselId;
+      $(this).slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        // infinite: true,
+        arrows: false,
+        dots: true,
+        fade: true,
+        appendDots: '#' + carouselId + ' .product-prev__colors',
+        customPaging: function (slider, i) {
+          let color = $('.product-prev__img').eq(i).data('color');
+          // console.log(color);
+          return '<a class="product-prev__color" style="background-color:' + color + '"></a>'
+        }
+      })
+    })
+  }
+  function productLineSlider() {
+    $('.js-products-line-slider').slick({
+      slidesToShow: 4,
       slidesToScroll: 1,
-      infinite: true,
-      arrows: false,
-      dots: true,
-      // appendDots: '.product-prev__colors',
     })
   }
   function tabs() {
@@ -90,6 +107,8 @@ function start() {
           tab[i].classList.remove('tab--active');
         }
         tab[index].classList.add('tab--active');
+        $('.js-products-line-slider').slick('refresh');
+        $('.product-prev__slider').slick('refresh');
       })
     })
   }
@@ -97,5 +116,7 @@ function start() {
   headerSearch();
   bannerSlider();
   productPrevSlider();
+  productLineSlider();
   tabs();
+  reload();
 }

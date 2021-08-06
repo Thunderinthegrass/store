@@ -25,6 +25,9 @@
 }
 }
 .js-products-line-slider{
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
+  .slick-slide{
+    margin: 0 5px 0 5px;
+  }
 }
