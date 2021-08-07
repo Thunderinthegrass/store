@@ -1,9 +1,31 @@
 .news-prev{
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  color: inherit;
+  &:last-child{
+    margin-bottom: 0;
+  }
   &__img {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
+    flex-shrink: 0;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 2px;
+    margin-right: 20px;
+  }
+  &__body{
+    display: flex;
+    flex-direction: column;
+  }
+  &__title{
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  &__date{
+    font-size: 12px;
+    color: $silver-chalice;
   }
 }

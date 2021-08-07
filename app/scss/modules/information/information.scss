@@ -1,3 +1,22 @@
 @import "news";
 @import "review";
 @import "brands";
+
+.information{
+  padding-top: 30px;
+  display: flex;
+  & > * {
+    flex: 1;
+    padding-right: 40px;
+    &:last-child{
+      padding-right: 0;
+    }
+  }
+  &-item__link{
+    color: $tundora;
+    border-bottom: 1px solid rgba(38, 38, 38, 0.37);
+  }
+  .title-section{
+    text-align: center;
+  }
+}

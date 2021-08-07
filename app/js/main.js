@@ -118,5 +118,4 @@ function start() {
   productPrevSlider();
   productLineSlider();
   tabs();
-  reload();
 }
