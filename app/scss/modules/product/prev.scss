@@ -78,5 +78,9 @@
   }
   .btn {
     width: 100%;
+    &:hover{
+      background: $sunset-orange;
+      color: #fff;
+    }
   }
 }

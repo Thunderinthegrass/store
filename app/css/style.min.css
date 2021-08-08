@@ -971,6 +971,11 @@ button {
   width: 100%;
 }
 
+.product-prev .btn:hover {
+  background: #f74f40;
+  color: #fff;
+}
+
 .news-prev {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1029,16 +1034,15 @@ button {
   padding: 5px 7px;
   border-radius: 2px;
   font-size: 12px;
-  color: #838383;
+  color: #444444;
 }
 
 .brands__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -1057,7 +1061,7 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100px;
+  width: 130px;
   height: 70px;
   padding: 5px;
   border-radius: 2px;
@@ -1129,6 +1133,19 @@ button {
 
 .information > *:last-child {
   padding-right: 0;
+}
+
+.information-item__body {
+  height: 250px;
+}
+
+.information-item__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .information-item__link {

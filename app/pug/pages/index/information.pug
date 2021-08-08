@@ -26,18 +26,18 @@ section.s-information.s-light-bg
             p.review-prev__text Только что получил футболку. Были опасения, что не попаду в размер. Взял L - села идеально. Цвет даже ярче, чем на картинке - французская роза. Футболка высокого качества, цвет не застирывается. Размеры и рост соответствуют. В целом - заказом доволен, буду заказывать ещё. Я счастлив 
             span.review-prev__author Валерка
         .information-item__footer
-        a(href="#").information-item__link Все отзывы
+          a(href="#").information-item__link Все отзывы
       .information__item 
         .information-item__header
           h2.title-section Бренды
         .information-item__body
           .brands__wrapper
             ul.brands__list 
-              each brand in [{img: 'merrell-logo',imgHover: 'merrell-logo-hover'}, {img:'columbia-logo',imgHover:'columbia-logo-hover'},{img: 'stern-logo',imgHover: 'stern-logo-hover'},{img: 'salomon-logo',imgHover: 'salomon-logo-hover'},{img: 'columbia-logo',imgHover:'columbia-logo-hover'},{img: 'stern-logo',imgHover: 'stern-logo-hover'}]
+              each brand in [{img: 'merrell-logo',imgHover: 'merrell-logo-hover'}, {img:'columbia-logo',imgHover:'columbia-logo-hover'},{img: 'stern-logo',imgHover: 'stern-logo-hover'},{img: 'salomon-logo',imgHover: 'salomon-logo-hover'},{img: 'demix-logo',imgHover:'demix-logo-hover'},{img: 'outventure-logo',imgHover: 'outventure-logo-hover'}]
                 li.brands__item
                   a(href="#").brand
                     .brand__img-wrapper
                       img(src=`img/content/brands/${brand.img}.svg`).brand__img
                       img(src=`img/content/brands/${brand.imgHover}.svg`).brand__img-hover
         .information-item__footer
-        a(href="#").information-item__link Все бренды
+          a(href="#").information-item__link Все бренды

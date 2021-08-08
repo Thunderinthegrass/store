@@ -12,6 +12,13 @@
       padding-right: 0;
     }
   }
+  &-item__body{
+    height: 250px;
+  }
+  &-item__footer{
+    display: flex;
+    justify-content: center;
+  }
   &-item__link{
     color: $tundora;
     border-bottom: 1px solid rgba(38, 38, 38, 0.37);
