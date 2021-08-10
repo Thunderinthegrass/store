@@ -1,2 +1,17 @@
-
+.about{
+  display: flex;
+  justify-content: space-between;
+  &-navigation{
+    width: 180px;
+    margin-right: 40px;
+    &__item{
+      padding: 10px 0 10px 10px;
+      font-weight: 600;
+    }
+  }
+  &__body{
+    width: 970px;
+    line-height: 1.77;
+  }
+}
           
