@@ -7,14 +7,16 @@ html(lang="ru")
     link(rel="stylesheet", href="../css/libs.min.css")
     link(rel="stylesheet" href="../css/style.min.css")
     title Store
-  body
+  body.fixed
+    include modules/preloader/preloader
     header.header   
       include modules/header/header
-      include pages/index/banner
-      include pages/index/advantages
-      include pages/index/hits
-      include pages/index/information
-      include pages/index/about
+    include pages/index/banner
+    include pages/index/advantages
+    include pages/index/hits
+    include pages/index/information
+    include pages/index/about
+    include modules/footer/footer
     script(src="js/libs.min.js")
     script(src="js/main.js") 
 

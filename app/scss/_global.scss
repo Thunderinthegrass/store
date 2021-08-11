@@ -67,3 +67,20 @@ button {
   padding: 0 15px;
   width: 100%;
 }
+.fixed{
+  overflow: hidden;
+}
+.d-none{
+  display: none;
+}
+.anim-opasity{
+  animation: opasity0 .3s linear forwards;
+}
+@keyframes opasity0 {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}

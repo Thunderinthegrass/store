@@ -1,0 +1,58 @@
+mixin footerNavLink(link, text)
+  li.footer-nav__item 
+    a(href="link").footer-nav__link=text 
+
+footer.footer 
+  .footer__main 
+    .container 
+      .footer__item 
+        ul.footer__nav 
+          +footerNavLink('#', 'Одежда')
+          +footerNavLink('#', 'Обувь')
+          +footerNavLink('#', 'Детям')
+          +footerNavLink('#', 'Тренажеры')
+          +footerNavLink('#', 'Экипировка')
+          +footerNavLink('#', 'Туризм')
+          +footerNavLink('#', 'Аксессуары')
+      .footer__item 
+        ul.footer__nav 
+          +footerNavLink('#', 'О компании')
+          +footerNavLink('#', 'Доставка')
+          +footerNavLink('#', 'Оплата')
+          +footerNavLink('#', 'Поставщикам')
+          +footerNavLink('#', 'Новости')
+          +footerNavLink('#', 'Отзывы')
+      .footer__item 
+        ul.footer__nav 
+          +footerNavLink('#', 'Контакты')
+          +footerNavLink('#', 'Вопросы и ответы')
+          +footerNavLink('#', 'Карта сайта')
+        .footer__address Байбышевск, ул. Схалазменского 12
+      .footer__item.footer__contacts 
+        .footer__phone 8(095) 595-11-19
+  .footer__socials
+    .container
+      ul.socials 
+        li.socials__icon 
+          a(href="").socials__link
+            img(src="img/svg/icons-social/icon-vk.svg", alt="иконка Вконтакте") 
+            span.socials__name Вконтакте
+        li.socials__icon 
+          a(href="").socials__link
+            img(src="img/svg/icons-social/icon-youtube.svg", alt="иконка Youtube") 
+            span.socials__name YouTube
+        li.socials__icon 
+          a(href="").socials__link
+            img(src="img/svg/icons-social/icon-inst.svg", alt="иконка Instagram") 
+            span.socials__name Instagram
+        li.socials__icon 
+          a(href="").socials__link
+            img(src="img/svg/icons-social/icon-fb.svg", alt="иконка Facebook") 
+            span.socials__name Facebook
+      .yandex-market
+        img(src="img/png/yandex-market.png", alt="иконка яндекс маркета")
+        a(href="").btn Оставить отзыв  
+  .footer__bottom
+    .container
+      span.copyright 2021. Физкульт-мастер. Почти все права защищены.
+      a(href="").footer__personal-data Политика обработки персональных данных

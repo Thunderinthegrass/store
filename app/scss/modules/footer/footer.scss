@@ -1,0 +1,68 @@
+.footer {
+  margin-bottom: -19px;
+  padding: 30px 0 0;
+  background: $solitude;
+  &__main {
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__bottom {
+    background: $athens-gray;
+    padding: 20px 0;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__personal-data {
+    color: $silver-chalice;
+  }
+  &__socials {
+    padding-bottom: 30px;
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .socials {
+        display: flex;
+        justify-content: space-between;
+        &__icon {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-right: 25px;
+          &:last-child {
+            margin-right: 0;
+          }
+          img {
+            height: 35px;
+            width: 35px;
+            margin-right: 10px;
+          }
+        }
+        &__link {
+          color: $silver-chalice;
+        }
+      }
+    }
+    .yandex-market {
+      display: flex;
+      align-items: center;
+      img {
+        height: 25px;
+        margin-right: 10px;
+      }
+      .btn {
+        transition: all 0.3s;
+        font-weight: 700;
+        &:hover {
+          background: $sunset-orange;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

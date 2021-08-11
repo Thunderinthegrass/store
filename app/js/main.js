@@ -1,6 +1,16 @@
 console.log('привет');
 document.addEventListener("DOMContentLoaded", start);
 
+window.onload = function() {
+  document.querySelector('body').classList.remove('fixed');
+  let preloader = document.querySelector('.preloader');
+  preloader.classList.add('anim-opasity');
+  let timeOut = setTimeout(() => {
+    preloader.classList.add('d-none');
+  }, 300);
+  
+}
+
 function start() {
   //выпадающее меню
   let mainSubnavItem = document.querySelectorAll('.main-subnav__item');
