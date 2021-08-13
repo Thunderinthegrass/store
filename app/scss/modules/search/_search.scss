@@ -4,6 +4,7 @@
   &.search--open{
     .search__body{
       display: block;
+      animation: search .2s linear forwards;
     }
   }
   &__icon {
@@ -18,7 +19,11 @@
     background: #fff;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.21), 0 10px 20px 0 rgba(0, 0, 0, 0.1);
     display: none;
-    width: 550px;
+    opacity: 1;
+    @media screen and (max-width: $tablet-size) {
+      display: block;
+      position: static;
+    }
   }
   &__form {
     display: flex;
@@ -65,5 +70,13 @@
     padding: 0 15px;
     font-weight: 700;
     flex: 0 0 auto;
+  }
+}
+@keyframes search {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
   }
 }

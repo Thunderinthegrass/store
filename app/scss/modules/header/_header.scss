@@ -1,8 +1,12 @@
 @import "../../mixins.scss";
+@import "mobile.scss";
 
 //header-top----------------------------
 .header {
   border-bottom: 1px solid $athens-gray;
+  @media screen and (max-width: $tablet-size) {
+    border-bottom: none;
+  }
   &__logo {
     margin-right: 40px;
   }
@@ -16,6 +20,9 @@
   &__top {
     padding: 10px 0;
     background: $athens-gray;
+    @media screen and (max-width: $tablet-size) {
+      display: none;
+    }
   }
   &__main {
     padding: 25px 0;
@@ -31,6 +38,16 @@
       margin-right: 30px;
       &:last-child {
         margin-right: 0;
+      }
+    }
+  }
+  &__item {
+    @media screen and (max-width: $tablet-size) {
+      display: none;
+    }
+    &.header__item--mobile {
+      @media screen and (max-width: $tablet-size) {
+        display: block;
       }
     }
   }
@@ -63,6 +80,9 @@
     display: flex;
     flex: 0 0 190px;
     width: 90px;
+    @media screen and (max-width: $tablet-size) {
+      display: none;
+    }
     &__icon {
       flex: 0 0 15px;
       height: 21px;
@@ -122,8 +142,15 @@
       font-weight: 600;
     }
   }
-  &__search{
+  &__search {
     margin-left: auto;
+    .search__body {
+      width: 550px;
+    }
+  }
+  &__menu {
+    @media screen and (max-width: $tablet-size) {
+      display: none;
+    }
   }
 }
-

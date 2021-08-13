@@ -3,10 +3,64 @@
   padding: 30px 0 0;
   background: $solitude;
   &__main {
+    margin-bottom: 35px;
     .container {
       display: flex;
+      align-items: flex-start;
       justify-content: space-between;
     }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    &:nth-child(3) {
+      .footer__nav {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  &__address {
+    max-width: 155px;
+    line-height: 1.8;
+  }
+  &-nav {
+    &__link {
+      color: $mine-shaft;
+      display: inline-block;
+      transition: all 0.3s;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    &__item {
+      margin-bottom: 8px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  &__phones {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    align-items: flex-end;
+  }
+  &__phone {
+    font-size: 20px;
+    font-weight: 600;
+    color: $mine-shaft;
+    margin-bottom: 5px;
+  }
+  &__text {
+    margin-bottom: 5px;
+  }
+  &__mail {
+    color: $mine-shaft;
   }
   &__bottom {
     background: $athens-gray;

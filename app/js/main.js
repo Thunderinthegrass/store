@@ -132,10 +132,17 @@ function start() {
     tabs(tab, tabNav);
     tabs(aboutTab, aboutTabNav);
   }
+  function sandwich() {
+    let sandwich = document.querySelector('.sandwich');
+    sandwich.addEventListener('click', () => {
+      sandwich.classList.toggle('sandwich--active');
+    })
+  }
 
   headerSearch();
   bannerSlider();
   productPrevSlider();
   productLineSlider();
   allTabs();
+  sandwich();
 }

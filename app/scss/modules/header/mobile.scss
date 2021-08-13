@@ -1,0 +1,19 @@
+.header {
+  &__mobile {
+    display: none;
+    @media screen and (max-width: $tablet-size) {
+      display: block;
+      border-bottom: none;
+    }
+    .container {
+      display: flex;
+      align-items: center;
+    }
+    .search {
+      width: 50%;
+      &__body{
+        padding: 0;
+      }
+    }
+  }
+}
