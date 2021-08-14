@@ -1046,6 +1046,64 @@ button {
   padding-top: 20px;
 }
 
+@media screen and (max-width: 1139px) {
+  .hits .slider-dots {
+    background: #ff9a9a;
+  }
+}
+
+.hits .products-line-slider__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hits .products-line-slider__btn {
+  background: #000;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  z-index: 8;
+}
+
+.hits .products-line-slider__btn--prev {
+  left: 0;
+  bottom: 0;
+}
+
+.hits .products-line-slider__btn--prev .products-line-slider__btn-img {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.hits .products-line-slider__btn--next {
+  right: 0;
+  bottom: 0;
+}
+
+.hits .products-line-slider__btn-img {
+  height: 100%;
+}
+
+.hits .products-line-slider__dots {
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+}
+
+.hits .products-line-slider__dot {
+  width: 10px;
+  height: 10px;
+  background: #cf3f3f;
+  margin: 5px;
+}
+
 .js-products-line-slider .slick-slide {
   margin: 0 5px 0 5px;
 }

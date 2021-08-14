@@ -1,14 +1,14 @@
 console.log('привет');
 document.addEventListener("DOMContentLoaded", start);
 
-window.onload = function() {
+window.onload = function () {
   document.querySelector('body').classList.remove('fixed');
   let preloader = document.querySelector('.preloader');
   preloader.classList.add('anim-opasity');
   let timeOut = setTimeout(() => {
     preloader.classList.add('d-none');
   }, 300);
-  
+
 }
 
 function start() {
@@ -76,14 +76,14 @@ function start() {
       dots: true,
       fade: true,
       customPaging: function (slider, i) {
-        return '<a class="banner__dot"></a>';
+        return '<div class="banner__dot"></div>';
       },
     })
   }
   function productPrevSlider() {
     $('.product-prev__slider').each(function (idx) {
-      let carouselId = "carousel" + idx;
-      this.closest('.product-prev').id = carouselId;
+      let productPrevSliderClass = "product-prev__slider-" + idx;
+      this.closest('.product-prev').classList.add(productPrevSliderClass);
       $(this).slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -91,7 +91,9 @@ function start() {
         arrows: false,
         dots: true,
         fade: true,
-        appendDots: '#' + carouselId + ' .product-prev__colors',
+        swipe: false,
+        infinity: false,
+        appendDots: '.' + productPrevSliderClass + ' .product-prev__colors',
         customPaging: function (slider, i) {
           let color = $('.product-prev__img').eq(i).data('color');
           // console.log(color);
@@ -101,9 +103,28 @@ function start() {
     })
   }
   function productLineSlider() {
-    $('.js-products-line-slider').slick({
-      slidesToShow: 4,
-      slidesToScroll: 1,
+    $('.js-products-line-slider').each(function (idx) {
+      let productsLineSliderId = "products-line-slider-" + idx;
+      this.closest('.products-line-slider').id = productsLineSliderId;
+      $(this).slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+        appendDots: '#' + productsLineSliderId + ' .products-line-slider__dots',
+        prevArrow: '#' + productsLineSliderId + ' .products-line-slider__btn--prev',
+        nextArrow: '#' + productsLineSliderId + ' .products-line-slider__btn--next',
+        responsive: [{
+          breakpoint: 1139,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            customPaging: function (slider, i) {
+              return '<div class="products-line-slider__dot"></div>';
+            }
+          }
+        }],
+      })
     })
   }
   function tabs(tabItem, tabNavItem) {
