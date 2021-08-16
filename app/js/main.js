@@ -80,28 +80,28 @@ function start() {
       },
     })
   }
-  function productPrevSlider() {
-    $('.product-prev__slider').each(function (idx) {
-      let productPrevSliderClass = "product-prev__slider-" + idx;
-      this.closest('.product-prev').classList.add(productPrevSliderClass);
-      $(this).slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        // infinite: true,
-        arrows: false,
-        dots: true,
-        fade: true,
-        swipe: false,
-        infinity: false,
-        appendDots: '.' + productPrevSliderClass + ' .product-prev__colors',
-        customPaging: function (slider, i) {
-          let color = $('.product-prev__img').eq(i).data('color');
-          // console.log(color);
-          return '<a class="product-prev__color" style="background-color:' + color + '"></a>'
-        }
-      })
-    })
-  }
+  // function productPrevSlider() {
+  //   $('.product-prev__slider').each(function (idx) {
+  //     let productPrevSliderClass = "product-prev__slider-" + idx;
+  //     this.closest('.product-prev').classList.add(productPrevSliderClass);
+  //     $(this).slick({
+  //       slidesToShow: 1,
+  //       slidesToScroll: 1,
+  //       // infinite: true,
+  //       arrows: false,
+  //       dots: true,
+  //       fade: true,
+  //       swipe: false,
+  //       infinity: false,
+  //       appendDots: '.' + productPrevSliderClass + ' .product-prev__colors',
+  //       customPaging: function (slider, i) {
+  //         let color = $('.product-prev__img').eq(i).data('color');
+  //         // console.log(color);
+  //         return '<a class="product-prev__color" style="background-color:' + color + '"></a>'
+  //       }
+  //     })
+  //   })
+  // }
   function productLineSlider() {
     $('.js-products-line-slider').each(function (idx) {
       let productsLineSliderId = "products-line-slider-" + idx;
@@ -138,7 +138,7 @@ function start() {
         tabItem[index].classList.add('tab--active');
         if (e.target.closest('.hits')) {
           $('.js-products-line-slider').slick('refresh');
-          $('.product-prev__slider').slick('refresh');
+          // $('.product-prev__slider').slick('refresh');
         }
       })
     })
@@ -162,8 +162,52 @@ function start() {
 
   headerSearch();
   bannerSlider();
-  productPrevSlider();
+  // productPrevSlider();
   productLineSlider();
   allTabs();
   sandwich();
+
+  function productPrev() {
+    let productPrevSlider = document.querySelector('.product-prev__slider');
+    let productPrevColor = document.createElement('div');
+    productPrevColor.className = 'product-prev__color';
+
+
+    let productPrevImg = productPrevSlider.querySelector('.product-prev__img');
+    let productPrevColors = document.querySelector('.product-prev__colors');
+    productPrevColors.appendChild(productPrevColor);
+    let color = productPrevImg.dataset.color;
+    console.log(color);
+    productPrevColor.style.background = `${color}`;
+  }
+
+  function productPrevSlider() {
+    let productPrev = document.querySelectorAll('.product-prev');
+    let productPrevSlider = document.querySelectorAll('.product-prev__slider');
+    let productPrevImg;
+    let productPrevColors;
+
+
+    for (let i = 0; i < productPrevSlider.length; i++) {
+      productPrevImg = productPrevSlider[i].querySelectorAll('.product-prev__img');
+      productPrevColors = productPrev[i].querySelector('.product-prev__colors');
+      console.log(productPrevImg.length);
+      let colorId = 1;
+
+      for (let k = 0; k < productPrevImg.length; k++) {
+        let productPrevColor = document.createElement('div');
+        productPrevColor.className = 'product-prev__color';
+        productPrevColor.id = `elem${colorId}`;
+        let color = productPrevImg[k].dataset.color;
+        productPrevColor.style.background = `${color}`;
+        productPrevColors.appendChild(productPrevColor);
+        colorId++;
+
+        productPrevColor.addEventListener('click', () => {
+          productPrevColor.style.background = '#000';
+        })
+      }
+    }
+  }
+  productPrevSlider();
 }
