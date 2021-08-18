@@ -181,7 +181,7 @@ function start() {
     productPrevColor.style.background = `${color}`;
   }
 
-  function productPrevSlider() {
+  function productPrevSlider1() {
     let productPrev = document.querySelectorAll('.product-prev');
     let productPrevSlider = document.querySelectorAll('.product-prev__slider');
     let productPrevImg;
@@ -209,5 +209,65 @@ function start() {
       }
     }
   }
+  function productPrevColor() {
+    let productPrev = document.querySelectorAll('.product-prev');
+    for (let i = 0; i < productPrev.length; i++) {
+      productPrevImg = productPrev[i].querySelectorAll('.product-prev__img');
+      productPrevColor = productPrev[i].querySelectorAll('.product-prev__color');
+      console.log(productPrevImg.length);
+      
+      for (let i = 0; i < productPrevImg.length; i++) {
+        productPrevColor[i].style.display = 'inline-block';
+        productPrevColor[i].classList.add('d-block');
+        productPrevColor[i].classList.add('color--active');
+        let color = productPrevImg[i].dataset.color;
+        productPrevColor[i].style.background = `${color}`;
+      } 
+    }
+  }
+
+
+  function productPrevSlider() {
+    let productPrevColor = document.querySelectorAll('.color--active');
+    // console.log(`длина color--active ${productPrevColor.length}`)
+    for (let i = 0; i < productPrevColor.length; i++) {
+      productPrevColor[i].addEventListener('click', (e) => {
+        let parentElem = productPrevColor[i].closest('.product-prev');
+        // console.log(`родитель ${parentElem.classList}`);
+        let z = getComputedStyle(productPrevColor[i]);
+        console.log(z.backgroundColor);
+        let productPrevImg = parentElem.querySelectorAll('.product-prev__img');
+        console.log(`длина картинок ${productPrevImg.length}`);
+        for (let k = 0; k < productPrevImg.length; k++) {
+          let color = productPrevImg[k].dataset.color;
+          let u = getComputedStyle(productPrevColor[i]);
+          let z = u.backgroundColor;
+          // console.log(color)
+          // console.log(z)
+          productPrevImg[k].closest('.product-prev__img-wrapper').style.zIndex = '1';
+          if(color == z) {
+            productPrevImg[k].closest('.product-prev__img-wrapper').style.zIndex = '10';
+          }
+        }
+        console.log(i)
+      })
+    }
+  }
+
+  productPrevColor();
   productPrevSlider();
+  // let z = document.querySelector('.header-basket');
+  // let zStyle = getComputedStyle(z);
+  // console.log(zStyle.backgroundColor)
 }
+// productPrevColor[i].addEventListener('click', () => {
+//   let z = getComputedStyle(productPrevColor[i]);
+//   console.log(z.backgroundColor);
+//   if (z.backgroundColor == color) {
+//     console.log(i);
+//     let imgWrapper = productPrevImg[i].closest('.product-prev__img-wrapper');
+//     imgWrapper.style.zIndex = '10';
+//     // let u = getComputedStyle(productPrevImg[i]);
+//     // console.log(u.zIndex);
+//   }
+// })

@@ -73,6 +73,12 @@ button {
 .d-none{
   display: none;
 }
+.d-block{
+  display: inline-block;
+}
+.op0{
+  opacity: 0;
+}
 .anim-opasity{
   animation: opasity0 .3s linear forwards;
 }

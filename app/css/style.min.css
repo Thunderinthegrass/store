@@ -125,6 +125,14 @@ button {
   display: none;
 }
 
+.d-block {
+  display: inline-block;
+}
+
+.op0 {
+  opacity: 0;
+}
+
 .anim-opasity {
   -webkit-animation: opasity0 .3s linear forwards;
           animation: opasity0 .3s linear forwards;
@@ -1181,6 +1189,10 @@ button {
   margin: 0 auto;
 }
 
+.product-prev__img:first-child {
+  z-index: 10;
+}
+
 .product-prev__body {
   padding-top: 60px;
   position: relative;
@@ -1236,6 +1248,7 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 30px;
 }
 
 .product-prev__colors .slick-dots {
@@ -1258,10 +1271,10 @@ button {
   display: block;
   width: 23px;
   height: 23px;
-  border: 3px solid #fff;
+  border: 3px solid #e4220d;
   border-radius: 1px;
   margin: 0 3px;
-  outline: none;
+  display: none;
 }
 
 .product-prev .btn {
