@@ -67,26 +67,29 @@ button {
   padding: 0 15px;
   width: 100%;
 }
-.fixed{
+.fixed {
   overflow: hidden;
 }
-.d-none{
+.d-none {
   display: none;
 }
-.d-block{
-  display: inline-block;
+.border--active{
+  border-color: $sunset-orange;
 }
-.op0{
+.op0 {
   opacity: 0;
 }
-.anim-opasity{
-  animation: opasity0 .3s linear forwards;
+.color--active {
+  border: 1px solid $sunset-orange;
+}
+.anim-opasity {
+  animation: opasity0 0.3s linear forwards;
 }
 @keyframes opasity0 {
-  0%{
+  0% {
     opacity: 1;
   }
-  100%{
+  100% {
     opacity: 0;
   }
 }

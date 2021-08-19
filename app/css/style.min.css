@@ -125,17 +125,21 @@ button {
   display: none;
 }
 
-.d-block {
-  display: inline-block;
+.border--active {
+  border-color: #f74f40;
 }
 
 .op0 {
   opacity: 0;
 }
 
+.color--active {
+  border: 1px solid #f74f40;
+}
+
 .anim-opasity {
-  -webkit-animation: opasity0 .3s linear forwards;
-          animation: opasity0 .3s linear forwards;
+  -webkit-animation: opasity0 0.3s linear forwards;
+          animation: opasity0 0.3s linear forwards;
 }
 
 @-webkit-keyframes opasity0 {
@@ -1070,11 +1074,14 @@ button {
 }
 
 .hits .products-line-slider__btn {
-  background: #000;
   width: 40px;
   height: 40px;
   text-align: center;
   z-index: 8;
+}
+
+.hits .products-line-slider__btn:active {
+  background: #f5c2bd;
 }
 
 .hits .products-line-slider__btn--prev {
@@ -1098,18 +1105,31 @@ button {
 }
 
 .hits .products-line-slider__dots {
-  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hits .products-line-slider__dots ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100px;
 }
 
+.hits .products-line-slider__dots ul .slick-active .products-line-slider__dot {
+  background: #f74f40;
+}
+
 .hits .products-line-slider__dot {
-  width: 30px;
-  height: 30px;
-  background: #cf3f3f;
+  width: 15px;
+  height: 15px;
+  background: #f08e85;
   margin: 5px;
+  border-radius: 50%;
 }
 
 .js-products-line-slider .slick-slide {
@@ -1271,10 +1291,12 @@ button {
   display: block;
   width: 23px;
   height: 23px;
-  border: 3px solid #e4220d;
+  border: 2px solid #fff;
   border-radius: 1px;
   margin: 0 3px;
   display: none;
+  cursor: pointer;
+  border-radius: 2px;
 }
 
 .product-prev .btn {
