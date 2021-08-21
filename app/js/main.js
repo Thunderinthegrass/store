@@ -40,22 +40,28 @@ function start() {
   //search
   function headerSearch() {
     let searchIcon = document.querySelector('.search__icon');
-    let search = document.querySelector('.search');
+    let search = document.querySelectorAll('.search');
 
     function openSearchForm() {
       searchIcon.addEventListener('click', () => {
-        search.classList.add('search--open');
+        for (let i = 0; i < search.length; i++) {
+          search[0].classList.add('search--open');
+        }
       })
     }
     function clearSearchForm() {
-      let searchClear = document.querySelector('.search__clear');
-      searchClear.addEventListener('click', () => document.querySelector('.search__input').value = '');
+      let searchClear = document.querySelectorAll('.search__clear');
+      let searchInput = document.querySelectorAll('.search__input');
+
+      for (let i = 0; i < search.length; i++) {
+        searchClear[i].addEventListener('click', () => searchInput[i].value = '');
+      }
     }
     function searchHide() {
       document.addEventListener('click', (e) => {
-        if (search.classList.contains('search--open')) {
+        if (search[0].classList.contains('search--open')) {
           if ((e.target.classList.contains('search--hide')) == false) {
-            search.classList.remove('search--open');
+            search[0].classList.remove('search--open');
           }
         }
       })

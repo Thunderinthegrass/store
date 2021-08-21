@@ -9,6 +9,9 @@
   }
   &__logo {
     margin-right: 40px;
+    @media screen and (max-width: $tablet-size) {
+      margin-right: 20px;
+    }
   }
   &__nav {
     &.header__nav {
@@ -30,10 +33,16 @@
   &__content {
     display: flex;
     align-items: center;
+    @media screen and (max-width: $tablet-size) {
+      justify-content: space-between;
+    }
   }
   &__phones {
     display: flex;
     margin-right: 90px;
+    @media screen and (max-width: $tablet-size) {
+      margin-right: 0;
+    }
     & > * {
       margin-right: 30px;
       &:last-child {

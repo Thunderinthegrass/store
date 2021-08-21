@@ -39,7 +39,7 @@
       text-align: center;
       z-index: 8;
       &:active{
-        background: #f5c2bd;
+        background: #d2ebfa;
       }
       &--prev {
         left: 0;
@@ -64,7 +64,7 @@
         width: 100px;
         .slick-active{
           .products-line-slider__dot{
-            background: $sunset-orange;
+            background: #a5d9fa;
           }
         }
       }
@@ -72,7 +72,7 @@
     &__dot {
       width: 15px;
       height: 15px;
-      background: #f08e85;
+      background: #d2ebfa;
       margin: 5px;
       border-radius: 50%;
     }
