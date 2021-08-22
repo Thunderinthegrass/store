@@ -1,18 +1,18 @@
-.mobile-nav {
+.mobile-menu {
   width: 50%;
   display: flex;
   align-items: center;
 }
-.mobile__nav {
-  &-sandwich{
+.mobile-menu {
+  &__sandwich {
     margin-right: 15px;
   }
-  &-header {
+  &__toogle {
     display: flex;
     align-items: center;
     cursor: pointer;
   }
-  &-title {
+  &__title {
     font-size: 20px;
     color: $mine-shaft;
     font-weight: 600;

@@ -697,13 +697,13 @@ button {
           transform: rotate(-45deg) translate(10px, -11px);
 }
 
-.header-nav__link {
+.inform-nav__link {
   color: #302f2f;
   font-size: 12px;
   line-height: 1.67;
 }
 
-.header-nav__list {
+.inform-nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -712,11 +712,11 @@ button {
           align-items: center;
 }
 
-.header-nav__item {
+.inform-nav__item {
   margin-right: 30px;
 }
 
-.header-nav__item:last-child {
+.inform-nav__item:last-child {
   margin-right: 0;
 }
 
@@ -833,7 +833,7 @@ button {
   width: 8px;
 }
 
-.mobile-nav {
+.mobile-menu {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -843,11 +843,11 @@ button {
           align-items: center;
 }
 
-.mobile__nav-sandwich {
+.mobile-menu__sandwich {
   margin-right: 15px;
 }
 
-.mobile__nav-header {
+.mobile-menu__toogle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -857,7 +857,7 @@ button {
   cursor: pointer;
 }
 
-.mobile__nav-title {
+.mobile-menu__title {
   font-size: 20px;
   color: #262626;
   font-weight: 600;
@@ -1099,6 +1099,7 @@ button {
   height: 40px;
   text-align: center;
   z-index: 8;
+  cursor: pointer;
 }
 
 .hits .products-line-slider__btn:active {
@@ -1151,6 +1152,7 @@ button {
   background: #d2ebfa;
   margin: 5px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .js-products-line-slider .slick-slide {

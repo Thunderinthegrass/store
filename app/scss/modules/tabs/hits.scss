@@ -38,6 +38,7 @@
       height: 40px;
       text-align: center;
       z-index: 8;
+      cursor: pointer;
       &:active{
         background: #d2ebfa;
       }
@@ -75,6 +76,7 @@
       background: #d2ebfa;
       margin: 5px;
       border-radius: 50%;
+      cursor: pointer;
     }
   }
 }

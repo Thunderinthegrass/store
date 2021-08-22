@@ -1,12 +1,12 @@
 mixin headerNavLink(link,text)
-  li.header-nav__item 
-    a(href=link).header-nav__link=text
+  li.inform-nav__item 
+    a(href=link).inform-nav__link=text
 
 .header__top
   .container
     .header__content
       nav.header__nav.header-nav 
-        ul.header-nav__list 
+        ul.inform-nav__list 
           +headerNavLink('#','О компании')
           +headerNavLink('#','Доставка и оплата')
           +headerNavLink('#','Акции')
@@ -15,7 +15,7 @@ mixin headerNavLink(link,text)
           +headerNavLink('#','Гарантии')
           +headerNavLink('#','Контакты')
       nav.header__nav.header__nav--right.header-nav 
-        ul.header-nav__list 
+        ul.inform-nav__list 
           +headerNavLink('','Регистрация')
           +headerNavLink('','Вход')
           
