@@ -1,9 +1,12 @@
-mixin  mainSubnavLink(link,text)
+mixin mainSubnavLink(link,text)
   li.catalog-nav__item 
     a(href=link).catalog-nav__link 
       span.catalog-nav__text=text
+      img(src="img/svg/angle-right.svg", alt="").main-subnav__icon
 
-
+mixin informNavLink(link, text)
+  li.inform-nav__item 
+    a(href=link).inform-nav__link= text
 
 .header__mobile 
   .container
@@ -15,21 +18,32 @@ mixin  mainSubnavLink(link,text)
           .sandwich__line.sandwich__line_bottom 
         span.mobile-menu__title Каталог товаров
       .mobile-menu__content 
-        .mobile-mtnu__header 
-          span.mobile-menu__title 
-            .mobile-menu__close 
-              svg(class='close-icon' data-name='Слой 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 211.26 211.26')
-                defs
-                  style.
-                    .cls-1{fill:#4b4b4b;stroke:#000;stroke-miterlimit:10;}
-                title
-                  | close
-                path.cls-1(d='M437.12,380.9a10.07,10.07,0,0,1,0,14.25l-1.46,1.46a10.07,10.07,0,0,1-14.25,0L335,310.15l-86.47,86.46a10.06,10.06,0,0,1-14.24,0l-1.47-1.46a10.09,10.09,0,0,1,0-14.25l86.46-86.46L232.77,208a10.07,10.07,0,0,1,0-14.24l1.47-1.47a10.07,10.07,0,0,1,14.24,0L335,278.72l86.46-86.46a10.09,10.09,0,0,1,14.25,0l1.46,1.47a10.06,10.06,0,0,1,0,14.24l-86.46,86.47Z' transform='translate(-229.32 -188.81)')
+        .mobile-menu__header 
+          span.mobile-menu__title Меню
+          .mobile-menu__close 
+            svg(class='close-icon' data-name='Слой 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 211.26 211.26')
+              defs
+                style.
+                  .cls-1{fill:#fff;stroke:#fff;stroke-miterlimit:10;}
+              title
+                | close
+              path.cls-1(d='M437.12,380.9a10.07,10.07,0,0,1,0,14.25l-1.46,1.46a10.07,10.07,0,0,1-14.25,0L335,310.15l-86.47,86.46a10.06,10.06,0,0,1-14.24,0l-1.47-1.46a10.09,10.09,0,0,1,0-14.25l86.46-86.46L232.77,208a10.07,10.07,0,0,1,0-14.24l1.47-1.47a10.07,10.07,0,0,1,14.24,0L335,278.72l86.46-86.46a10.09,10.09,0,0,1,14.25,0l1.46,1.47a10.06,10.06,0,0,1,0,14.24l-86.46,86.47Z' transform='translate(-229.32 -188.81)')
         .mobile-menu__body
           nav.catalog-nav 
             ul.catalog-nav__list 
               each text in ['Одежда','Обувь','Детям','Тренажеры','Экипировка','Туризм','Аксессуары']
                 +mainSubnavLink('', text)
+          nav.inform-nav 
+            ul.inform-nav__list 
+              +informNavLink('', 'О компании')
+              +informNavLink('', 'Доставка и оплата')
+              +informNavLink('', 'Акции')
+              +informNavLink('', 'Оптовикам')
+              +informNavLink('', 'Новости')
+              +informNavLink('', 'Гарантии')
+              +informNavLink('', 'Контакты')
+              +informNavLink('', 'Регистрация')
+              +informNavLink('', 'Вход')
     .search.search--hide
       .search__body.search--hide
         form.search__form.search--hide

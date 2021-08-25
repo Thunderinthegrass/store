@@ -33,6 +33,7 @@ function start() {
       })
       elem.addEventListener('mouseleave', () => {
         parentList.style.height = 'auto';
+        // parentList.style.width = '760px';
       })
     })
   }
@@ -138,7 +139,14 @@ function start() {
   }
   function sandwich() {
     let sandwich = document.querySelector('.sandwich');
+    let mobileMenuContent = document.querySelector('.mobile-menu__content');
+    let mobileMenuClose = document.querySelector('.mobile-menu__close');
     sandwich.addEventListener('click', () => {
+      sandwich.classList.toggle('sandwich--active');
+      mobileMenuContent.classList.toggle('mobile-menu--active');
+    })
+    mobileMenuClose.addEventListener('click',  () => {
+      mobileMenuContent.classList.remove('mobile-menu--active');
       sandwich.classList.toggle('sandwich--active');
     })
   }
