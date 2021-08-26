@@ -3,18 +3,25 @@
   display: flex;
   align-items: center;
   position: relative;
-  &__toogle {
-    .mobile-menu__title {
-      color: $mine-shaft;
-    }
-  }
-  &__sandwich {
-    margin-right: 15px;
+  @media screen and (max-width: $phone-size) {
+    width: 100%;
+    position: absolute;
+    left: 15px;
+    top: 15px;
   }
   &__toogle {
     display: flex;
     align-items: center;
     cursor: pointer;
+    .mobile-menu__title {
+      color: $mine-shaft;
+      @media screen and (max-width: $tablet-size) {
+        display: none;
+      }
+    }
+  }
+  &__sandwich {
+    margin-right: 15px;
   }
   &__content {
     position: absolute;

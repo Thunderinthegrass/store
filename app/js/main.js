@@ -12,7 +12,7 @@ window.onload = function () {
 }
 
 function start() {
-  //выпадающее меню
+  //табы
   let mainSubnavItem = document.querySelectorAll('.main-subnav__item');
 
   function mainSubnavHover() {
@@ -137,7 +137,7 @@ function start() {
     tabs(tab, tabNav);
     tabs(aboutTab, aboutTabNav);
   }
-  function sandwich() {
+  function mobileMenu() {
     let sandwich = document.querySelector('.sandwich');
     let mobileMenuContent = document.querySelector('.mobile-menu__content');
     let mobileMenuClose = document.querySelector('.mobile-menu__close');
@@ -155,7 +155,7 @@ function start() {
   bannerSlider();
   productLineSlider();
   allTabs();
-  sandwich();
+  mobileMenu();
   function productPrevColor() {
     let productPrev = document.querySelectorAll('.product-prev');
     for (let i = 0; i < productPrev.length; i++) {

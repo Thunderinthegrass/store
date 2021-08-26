@@ -29,12 +29,18 @@
   }
   &__main {
     padding: 25px 0;
+    @media screen and (max-width: $phone-size) {
+      padding: 15px 0;
+    }
   }
   &__content {
     display: flex;
     align-items: center;
     @media screen and (max-width: $tablet-size) {
       justify-content: space-between;
+    }
+    @media screen and (max-width: $phone-size) {
+      padding-left: 75px;
     }
   }
   &__phones {
@@ -57,6 +63,9 @@
     &.header__item--mobile {
       @media screen and (max-width: $tablet-size) {
         display: block;
+      }
+      @media screen and (max-width: $phone-size) {
+        display: none;
       }
     }
   }
@@ -110,6 +119,11 @@
     margin-left: auto;
     flex: 0 0 270px;
     width: 270px;
+    @media screen and (max-width: $phone-size) {
+      flex: 0 0 auto;
+      width: auto;
+      margin-left: 0;
+    }
     & > * {
       margin-right: 10px;
       &:last-child {
@@ -119,6 +133,9 @@
   }
   &-goods {
     margin-right: 10px;
+    @media screen and (max-width: $phone-size) {
+      display: none;
+    }
     &__price {
       position: relative;
       color: $tundora;
@@ -142,13 +159,24 @@
     background: $wild-sand;
     border-radius: 20px;
     cursor: pointer;
+    @media screen and (max-width: $phone-size) {
+      padding: 0;
+      height: auto;
+      background: transparent;
+    }
     &__icon {
-      @include size(20px);
+      @include size(30px);
       margin-right: 15px;
+      @media screen and (max-width: $phone-size) {
+        margin-right: 0;
+      }
     }
     &__text {
       color: $tundora;
       font-weight: 600;
+      @media screen and (max-width: $phone-size) {
+        display: none;
+      }
     }
   }
   &__search {
