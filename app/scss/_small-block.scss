@@ -13,12 +13,19 @@
   background: $solitude;
   padding: 20px 0;
   border-radius: 2px;
+  @media screen and (max-width: $phone-size) {
+    padding: 0;
+  }
 }
 .advantage {
   display: flex;
   align-items: center;
   @media screen and (max-width: $tablet-size) {
     flex-direction: column;
+  }
+  @media screen and (max-width: $phone-size) {
+    flex-direction: row;
+    padding: 10px 0;
   }
   &__icon-wrapper {
     height: 50px;
@@ -27,6 +34,9 @@
     @media screen and (max-width: $tablet-size) {
       margin-right: 0;
       margin-bottom: 10px;
+      @media screen and (max-width: $phone-size) {
+        margin: 0 29px 0 0;
+      }
     }
   }
   &__body {
@@ -34,6 +44,10 @@
     flex-direction: column;
     @media screen and (max-width: $tablet-size) {
       align-items: center;
+    }
+    @media screen and (max-width: $phone-size) {
+      min-width: 135px;
+      align-items: flex-start;
     }
   }
   &__title {
@@ -45,6 +59,9 @@
     font-size: 12px;
     line-height: 2;
     color: $silver-chalice;
+    @media screen and (max-width: $phone-size) {
+      margin-bottom: 30px;
+    }
   }
 }
 .s-light-bg {

@@ -495,6 +495,13 @@ button {
   overflow: hidden;
 }
 
+@media screen and (max-width: 767px) {
+  .banner {
+    padding: 15px;
+    height: auto;
+  }
+}
+
 .banner .js-banner {
   width: 100%;
 }
@@ -525,6 +532,12 @@ button {
   z-index: 1;
 }
 
+@media screen and (max-width: 767px) {
+  .banner__navigation {
+    display: none;
+  }
+}
+
 .banner__navigation:hover {
   background: rgba(255, 255, 255, 0.6);
 }
@@ -551,12 +564,24 @@ button {
   padding: 30px 0;
 }
 
+@media screen and (max-width: 767px) {
+  .banner__content {
+    padding: 0;
+  }
+}
+
 .banner__img-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 40%;
           flex: 0 0 40%;
   width: 40%;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .banner__img {
@@ -581,11 +606,23 @@ button {
   font-weight: 700;
 }
 
+@media screen and (max-width: 767px) {
+  .banner__title {
+    font-size: 30px;
+  }
+}
+
 .banner__descr {
   display: block;
   font-size: 18px;
   line-height: 1.67;
   margin-bottom: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .banner__descr {
+    font-size: 16px;
+  }
 }
 
 .banner__dot {
@@ -644,6 +681,12 @@ button {
   border-radius: 2px;
 }
 
+@media screen and (max-width: 767px) {
+  .advantages {
+    padding: 0;
+  }
+}
+
 .advantage {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -662,6 +705,16 @@ button {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .advantage {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 10px 0;
+  }
+}
+
 .advantage__icon-wrapper {
   height: 50px;
   width: 50px;
@@ -672,6 +725,12 @@ button {
   .advantage__icon-wrapper {
     margin-right: 0;
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 1139px) and (max-width: 767px) {
+  .advantage__icon-wrapper {
+    margin: 0 29px 0 0;
   }
 }
 
@@ -693,6 +752,15 @@ button {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .advantage__body {
+    min-width: 135px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 .advantage__title {
   font-size: 18px;
   line-height: 1.33;
@@ -703,6 +771,12 @@ button {
   font-size: 12px;
   line-height: 2;
   color: #838383;
+}
+
+@media screen and (max-width: 767px) {
+  .advantage__descr {
+    margin-bottom: 30px;
+  }
 }
 
 .s-light-bg {

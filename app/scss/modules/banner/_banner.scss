@@ -8,6 +8,10 @@
   position: relative;
   border-radius: 2px;
   overflow: hidden;
+  @media screen and (max-width: $phone-size) {
+    padding: 15px;
+    height: auto;
+  }
   .js-banner {
     width: 100%;
   }
@@ -24,6 +28,9 @@
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
+    @media screen and (max-width: $phone-size) {
+      display: none;
+    }
     &:hover {
       background: rgba(255, 255, 255, 0.6);
     }
@@ -41,11 +48,16 @@
   &__content {
     display: flex;
     padding: 30px 0;
+    @media screen and (max-width: $phone-size) {
+      padding: 0;
+    }
   }
   &__img-wrapper {
+    display: flex;
     flex: 0 0 40%;
     width: 40%;
     text-align: center;
+    align-items: center;
   }
   &__img {
     max-width: 100%;
@@ -63,12 +75,18 @@
     line-height: 1;
     margin-bottom: 15px;
     font-weight: 700;
+    @media screen and (max-width: $phone-size) {
+      font-size: 30px;
+    }
   }
   &__descr {
     display: block;
     font-size: 18px;
     line-height: 1.67;
     margin-bottom: 40px;
+    @media screen and (max-width: $phone-size) {
+      font-size: 16px;
+    }
   }
   &__dot {
     @include size(10px);
