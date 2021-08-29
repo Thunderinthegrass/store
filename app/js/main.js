@@ -108,6 +108,18 @@ function start() {
             slidesToShow: 3,
             slidesToScroll: 1,
           }
+        },{
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          }
+        },{
+          breakpoint: 465,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
         }],
       })
     })
@@ -145,7 +157,7 @@ function start() {
       sandwich.classList.toggle('sandwich--active');
       mobileMenuContent.classList.toggle('mobile-menu--active');
     })
-    mobileMenuClose.addEventListener('click',  () => {
+    mobileMenuClose.addEventListener('click', () => {
       mobileMenuContent.classList.remove('mobile-menu--active');
       sandwich.classList.toggle('sandwich--active');
     })
@@ -163,18 +175,18 @@ function start() {
       productPrevColor = productPrev[i].querySelectorAll('.product-prev__color');
       productPrevImg[0].closest('.product-prev__img-wrapper').style.zIndex = '2';
       productPrevColor[0].style.borderColor = 'transparent';
-      
+
       for (let i = 0; i < productPrevImg.length; i++) {
         productPrevColor[i].style.display = 'inline-block';
         productPrevColor[i].classList.add('color--active');
         let color = productPrevImg[i].dataset.color;
         productPrevColor[i].style.background = `${color}`;
-      } 
+      }
     }
   }
   function productPrevSlider() {
     let productPrevColor = document.querySelectorAll('.color--active');
-    
+
     for (let i = 0; i < productPrevColor.length; i++) {
       productPrevColor[i].addEventListener('click', (e) => {
         for (let j = 0; j < productPrevColor.length; j++) {
@@ -190,7 +202,7 @@ function start() {
           let u = getComputedStyle(productPrevColor[i]);
           let z = u.backgroundColor;
           productPrevImg[k].closest('.product-prev__img-wrapper').style.zIndex = '1';
-          if(color == z) {
+          if (color == z) {
             productPrevImg[k].closest('.product-prev__img-wrapper').style.zIndex = '10';
           }
         }

@@ -3,8 +3,10 @@
   display: flex;
   align-items: center;
   position: relative;
+  @media screen and (max-width: $tablet-size) {
+    width: 95%;
+  }
   @media screen and (max-width: $phone-size) {
-    width: 100%;
     position: absolute;
     left: 15px;
     top: 15px;

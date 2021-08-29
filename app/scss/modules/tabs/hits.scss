@@ -60,9 +60,12 @@
     &__dots {
       display: flex;
       align-items: center;
+      justify-content: center;
+      width: 100%;
       ul {
         display: flex;
-        width: 100px;
+        width: 100%;
+        justify-content: center;
         .slick-active{
           .products-line-slider__dot{
             background: #a5d9fa;
