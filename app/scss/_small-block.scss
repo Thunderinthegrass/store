@@ -105,3 +105,37 @@
     }
   }
 }
+.breadcrumbs {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+  }
+  &__link {
+    display: inline-block;
+    padding-right: 30px;
+    position: relative;
+    font-size: 12px;
+    color: $mine-shaft;
+    &::after {
+      position: absolute;
+      content: "";
+      top: 4px;
+      right: 7px;
+      height: 10px;
+      width: 16px;
+      background-image: url(/img/svg/breadcrumb-arrow.svg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  &__current{
+    font-size: 12px;
+    color: $mine-shaft;
+  }
+}

@@ -1,3 +1,6 @@
+block variables 
+  - var title = 'Физкульт-мастер'
+  - var pageClass = 'brands-page'
 doctype html
 html(lang="ru")
   head
@@ -6,17 +9,17 @@ html(lang="ru")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet", href="../css/libs.min.css")
     link(rel="stylesheet" href="../css/style.min.css")
-    title Store
+    title #{title}
   body.fixed
     include modules/preloader/preloader
     header.header   
       include modules/header/header
-    include pages/index/banner
-    include pages/index/advantages
-    include pages/index/hits
-    include pages/index/information
-    include pages/index/about
-    include modules/footer/footer
+      include pages/index/banner
+      include pages/index/advantages
+      include pages/index/hits
+      include pages/index/information
+      include pages/index/about
+      include modules/footer/footer
     script(src="js/libs.min.js")
     script(src="js/main.js") 
 

@@ -12,6 +12,9 @@
       border-bottom: 2px solid $alto;
       flex: 1;
       margin-right: 20px;
+      @media screen and (max-width: $phone-size) {
+        margin-right: 5px;
+      }
       &:last-child {
         margin-right: 0;
       }
@@ -39,7 +42,7 @@
       text-align: center;
       z-index: 8;
       cursor: pointer;
-      &:active{
+      &:active {
         background: #d2ebfa;
       }
       &--prev {
@@ -66,8 +69,8 @@
         display: flex;
         width: 100%;
         justify-content: center;
-        .slick-active{
-          .products-line-slider__dot{
+        .slick-active {
+          .products-line-slider__dot {
             background: #a5d9fa;
           }
         }
