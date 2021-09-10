@@ -1,9 +1,24 @@
-.brands__list {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  @media screen and (max-width: $tablet-size) {
-    margin-bottom: 20px;
+.brands {
+  padding-top: 15px;
+  border-top: 1px solid $athens-gray;
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    & > * {
+      display: flex;
+      justify-content: center;
+      width: 180px;
+      margin-bottom: 30px;
+    }
+    &--small {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      @media screen and (max-width: $tablet-size) {
+        margin-bottom: 20px;
+      }
+    }
   }
 }
 .brand {
@@ -15,17 +30,18 @@
   height: 70px;
   padding: 5px;
   border-radius: 2px;
-  transition: all .3s;
-  &:hover{
-      background: $sunset-orange;
-    .brand__img{
+  transition: all 0.3s;
+  background: $solitude;
+  &:hover {
+    background: $sunset-orange;
+    .brand__img {
       opacity: 0;
     }
-    .brand__img-hover{
+    .brand__img-hover {
       opacity: 1;
     }
   }
-  &__img-wrapper{
+  &__img-wrapper {
     position: relative;
     height: 40px;
     width: 100%;
@@ -37,9 +53,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: all .3s;
+    transition: all 0.3s;
   }
-  &__img-hover{
+  &__img-hover {
     position: absolute;
     max-height: 95%;
     width: 100%;
@@ -47,6 +63,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    transition: all .3s;
+    transition: all 0.3s;
   }
 }

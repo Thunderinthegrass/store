@@ -166,10 +166,15 @@ function start() {
   headerSearch();
   bannerSlider();
   productLineSlider();
-  allTabs();
-  mobileMenu();
+  if (document.body.classList.contains('.hits')) {
+    allTabs();
+  }
+  if (document.body.classList.contains('.sandwich')) {
+    mobileMenu();
+  }
   function productPrevColor() {
     let productPrev = document.querySelectorAll('.product-prev');
+    console.log(productPrev.length)
     for (let i = 0; i < productPrev.length; i++) {
       productPrevImg = productPrev[i].querySelectorAll('.product-prev__img');
       productPrevColor = productPrev[i].querySelectorAll('.product-prev__color');

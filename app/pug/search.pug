@@ -1,0 +1,49 @@
+block variables 
+  - var title = 'Поиск'
+  - var pageClass = 'brands-page'
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="css/libs.min.css")
+    link(rel="stylesheet" href="css/style.min.css")
+    title #{title}
+  body.fixed
+    include modules/preloader/preloader
+    header.header
+      include modules/header/header-main
+      .breadcrumbs 
+        .container
+          ul.breadcrumbs__list
+            li.breadcrumbs__item 
+              a(href="index.html").breadcrumbs__link Главная
+            li.breadcrumbs__item 
+              span.breadcrumbs__current Поиск
+    section.s-search 
+      .container 
+        h1.title-page Результаты поиска
+        .search-result 
+          .search-result__header
+            .search-result__request 
+              span.search-result__label По запросу:
+              .search.search--hide
+                img.search__icon.search--hide(src="img/svg/search.svg" alt="Поиск")
+                .search__body.search--hide
+                  form.search__form.search--hide
+                    .search__input-wrapper.search--hide
+                      input(placeholder="Я хочу купить...").search__input.search--hide
+                      .search__clear.search--hide
+                        img.search__clear-icon.search--hide(src="img/svg/close.svg" alt="")
+                    input(type="submit" value="Найти").search__btn.search--hide
+            span.search-result__label Найдено 48 товаров:
+          .search-result__body
+            .products-prev__wrapper
+              include modules/products/prev-1
+              include modules/products/prev-2
+              include modules/products/prev-3
+              include modules/products/prev-4
+    include modules/footer/footer
+    script(src="js/libs.min.js")
+    script(src="js/main.js")

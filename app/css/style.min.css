@@ -833,6 +833,10 @@ button {
           transform: rotate(-45deg) translate(10px, -11px);
 }
 
+.breadcrumbs {
+  margin-bottom: 10px;
+}
+
 .breadcrumbs__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1183,6 +1187,44 @@ button {
   display: none;
 }
 
+.s-search .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: static;
+}
+
+.s-search .search__body {
+  display: block;
+  position: static;
+  width: 100%;
+}
+
+.s-search .search__icon {
+  display: none;
+}
+
+.s-search .search-result {
+  padding: 0 15px;
+}
+
+.s-search .search-result__label {
+  display: block;
+  font-weight: 600;
+}
+
+.s-search .search-result__label:first-child {
+  margin-bottom: 15px;
+}
+
+.s-search .search-result__label:last-child {
+  margin-top: 15px;
+}
+
+.s-search .search-result__header {
+  margin-bottom: 30px;
+}
+
 .search {
   position: relative;
   z-index: 3;
@@ -1190,8 +1232,8 @@ button {
 
 .search.search--open .search__body {
   display: block;
-  -webkit-animation: search .2s linear forwards;
-          animation: search .2s linear forwards;
+  -webkit-animation: search 0.2s linear forwards;
+          animation: search 0.2s linear forwards;
 }
 
 .search__icon {
@@ -1273,7 +1315,7 @@ button {
           flex: 1;
 }
 
-.search__clear {
+.search__clear, .search__clear-search {
   position: absolute;
   right: 0;
   top: 0;
@@ -1370,6 +1412,13 @@ button {
 
 .title-section {
   font-size: 24px;
+  font-weight: 600;
+  line-height: 1.67;
+  margin-bottom: 15px;
+}
+
+.title-page {
+  font-size: 27px;
   font-weight: 600;
   line-height: 1.67;
   margin-bottom: 15px;
@@ -1678,6 +1727,12 @@ button {
   color: #fff;
 }
 
+.product-prev__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .news-prev {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1745,6 +1800,11 @@ button {
   color: #444444;
 }
 
+.brands {
+  padding-top: 15px;
+  border-top: 1px solid #dbeaf5;
+}
+
 .brands__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1755,8 +1815,29 @@ button {
       flex-wrap: wrap;
 }
 
+.brands__list > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 180px;
+  margin-bottom: 30px;
+}
+
+.brands__list--small {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 @media screen and (max-width: 1139px) {
-  .brands__list {
+  .brands__list--small {
     margin-bottom: 20px;
   }
 }
@@ -1779,9 +1860,10 @@ button {
   height: 70px;
   padding: 5px;
   border-radius: 2px;
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  background: #edf8ff;
 }
 
 .brand:hover {
@@ -1811,9 +1893,9 @@ button {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .brand__img-hover {
@@ -1826,9 +1908,9 @@ button {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   opacity: 0;
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .information {
