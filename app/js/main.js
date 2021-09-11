@@ -166,12 +166,12 @@ function start() {
   headerSearch();
   bannerSlider();
   productLineSlider();
-  if (document.body.classList.contains('.hits')) {
+  
+  if (document.querySelector('body').classList.contains('main-page') == true) {
     allTabs();
-  }
-  if (document.body.classList.contains('.sandwich')) {
     mobileMenu();
   }
+
   function productPrevColor() {
     let productPrev = document.querySelectorAll('.product-prev');
     console.log(productPrev.length)

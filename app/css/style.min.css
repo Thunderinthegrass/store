@@ -1187,11 +1187,24 @@ button {
   display: none;
 }
 
-.s-search .search {
+.s-search .products-prev__wrapper {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: static;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.s-search .product-prev {
+  min-width: 22%;
+  margin: 0 15px 30px;
 }
 
 .s-search .search__body {

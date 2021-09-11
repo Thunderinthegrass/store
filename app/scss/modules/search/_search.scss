@@ -1,7 +1,21 @@
 .s-search {
-  .search {
+  .products-prev__wrapper {
+    width: 100%;
     display: flex;
-    position: static;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+  .product-prev{
+    min-width: 22%;
+    margin: 0 15px 30px;
+    // &:nth-child(4n+4){
+    //   margin-right: 0;
+    // }
+  }
+  .search {
+    // display: flex;
+    // position: static;
     &__body {
       display: block;
       position: static;
@@ -15,10 +29,10 @@
       &__label {
         display: block;
         font-weight: 600;
-        &:first-child{
+        &:first-child {
           margin-bottom: 15px;
         }
-        &:last-child{
+        &:last-child {
           margin-top: 15px;
         }
       }
