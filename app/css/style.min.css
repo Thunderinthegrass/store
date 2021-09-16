@@ -861,7 +861,7 @@ button {
   right: 7px;
   height: 10px;
   width: 16px;
-  background-image: url(/img/svg/breadcrumb-arrow.svg);
+  background-image: url(/app/img/svg/breadcrumb-arrow.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1187,6 +1187,20 @@ button {
   display: none;
 }
 
+@media screen and (max-width: 767px) {
+  .s-search .title-page {
+    font-size: 20px;
+    margin-bottom: 5px;
+    line-height: 1;
+  }
+  .s-search .search__body {
+    padding: 0;
+  }
+  .s-search .search-result {
+    padding: 0 !important;
+  }
+}
+
 .s-search .products-prev__wrapper {
   width: 100%;
   display: -webkit-box;
@@ -1205,6 +1219,25 @@ button {
 .s-search .product-prev {
   min-width: 22%;
   margin: 0 15px 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .s-search .product-prev {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .s-search .product-prev__info, .s-search .product-prev__price {
+    margin-left: 25%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .s-search .product-prev__info, .s-search .product-prev__price {
+    margin-left: 0;
+  }
 }
 
 .s-search .search__body {
@@ -1236,6 +1269,12 @@ button {
 
 .s-search .search-result__header {
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .s-search .search-result__header {
+    margin-bottom: 10px;
+  }
 }
 
 .search {
@@ -1283,6 +1322,18 @@ button {
           align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+  .search__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .search__input {
   height: 50px;
   line-height: 48px;
@@ -1297,7 +1348,7 @@ button {
 
 @media screen and (max-width: 767px) {
   .search__input {
-    height: 40px;
+    height: 35px;
   }
 }
 
@@ -1326,6 +1377,12 @@ button {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .search__input-wrapper {
+    width: 100%;
+  }
 }
 
 .search__clear, .search__clear-search {
@@ -1366,7 +1423,8 @@ button {
 
 @media screen and (max-width: 767px) {
   .search__btn {
-    height: 40px;
+    height: 35px;
+    width: 100%;
   }
 }
 
@@ -1666,7 +1724,7 @@ button {
 
 .product-prev__title {
   line-height: 1.43;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .product-prev__price {

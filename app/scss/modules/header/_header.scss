@@ -12,6 +12,10 @@
     @media screen and (max-width: $tablet-size) {
       margin-right: 20px;
     }
+    @media screen and (max-width: $phone-size) {
+      // position: absolute;
+      // left: 65px;
+    }
   }
   &__nav {
     &.header__nav {

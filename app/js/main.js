@@ -33,7 +33,6 @@ function start() {
       })
       elem.addEventListener('mouseleave', () => {
         parentList.style.height = 'auto';
-        // parentList.style.width = '760px';
       })
     })
   }
@@ -166,10 +165,10 @@ function start() {
   headerSearch();
   bannerSlider();
   productLineSlider();
+  mobileMenu();
   
   if (document.querySelector('body').classList.contains('main-page') == true) {
     allTabs();
-    mobileMenu();
   }
 
   function productPrevColor() {
