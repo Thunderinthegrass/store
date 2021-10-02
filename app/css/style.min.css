@@ -861,7 +861,7 @@ button {
   right: 7px;
   height: 10px;
   width: 16px;
-  background-image: url(/app/img/svg/breadcrumb-arrow.svg);
+  background-image: url(/img/svg/breadcrumb-arrow.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1982,6 +1982,80 @@ button {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.s-brand .brand-wrapper {
+  background: transparent;
+}
+
+.s-brand .brand-wrapper .brand__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 5px 0 30px;
+  border-bottom: 1px solid #dbeaf5;
+}
+
+.s-brand .brand-wrapper .brand__logo {
+  padding: 25px 0;
+  margin-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.s-brand .brand-wrapper .brand__logo img {
+  width: 255px;
+}
+
+.s-brand .brand-wrapper .brand__descr .text {
+  line-height: 1.8;
+}
+
+.s-brand .products-line-slider {
+  background: #edf8ff;
+  margin-bottom: 30px;
+}
+
+.s-brand .products-line-slider__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 25px;
+}
+
+.s-brand .products-line-slider__btn-img {
+  height: 30px;
+  margin: 0 10px;
+}
+
+.s-brand .products-line-slider__btn--prev {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.s-brand .products-line-slider .product-prev {
+  border: 1px solid #dbeaf5;
 }
 
 .information {

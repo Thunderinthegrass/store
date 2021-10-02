@@ -66,3 +66,55 @@
     transition: all 0.3s;
   }
 }
+.s-brand {
+  .brand-wrapper {
+    background: transparent;
+    .brand__info {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 5px 0 30px;
+      border-bottom: 1px solid $athens-gray;
+    }
+    .brand__logo {
+      // width: 300px;
+      padding: 25px 0;
+      margin-right: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // background: #000;
+      img {
+        width: 255px;
+      }
+    }
+    .brand__descr {
+      .text {
+        line-height: 1.8;
+      }
+    }
+  }
+  .products-line-slider{
+    background: #edf8ff;
+    margin-bottom: 30px;
+    &__navigation{
+      display: flex;
+      height: 30px;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 25px;
+    }
+    &__btn{
+      &-img{
+        height: 30px;
+        margin: 0 10px;
+      }
+      &--prev{
+        transform: rotate(-180deg);
+      }
+    }
+    .product-prev{
+      border: 1px solid #dbeaf5;;
+    }
+  }
+}

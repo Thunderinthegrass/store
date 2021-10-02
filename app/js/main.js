@@ -162,13 +162,14 @@ function start() {
     })
   }
 
-  headerSearch();
+  
   bannerSlider();
   productLineSlider();
-  mobileMenu();
   
   if (document.querySelector('body').classList.contains('main-page') == true) {
     allTabs();
+    headerSearch();
+    mobileMenu();
   }
 
   function productPrevColor() {

@@ -1,0 +1,69 @@
+block variables 
+  - var title = 'Merrell'
+  - var pageClass = 'merrell-page'
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="../css/libs.min.css")
+    link(rel="stylesheet" href="../css/style.min.css")
+    title #{title}
+  body.fixed
+    include modules/preloader/preloader
+    header.header
+      include modules/header/header-main
+      .breadcrumbs 
+        .container
+          ul.breadcrumbs__list
+            li.breadcrumbs__item 
+              a(href="index.html").breadcrumbs__link Главная
+            li.breadcrumbs__item 
+              a(href="brands.html").breadcrumbs__link Бренды
+            li.breadcrumbs__item 
+              span.breadcrumbs__current Merrell
+    section.s-brand 
+      .container 
+        .brand-wrapper 
+          h1.title-page Merrell
+          .brand__info 
+            .brand__logo 
+              img(src='img/content/brands/merrell-logo.svg' alt="Логотип бренда")
+            .brand__descr 
+              p.text <b>Merrell</b> - американская компания-производитель обувной продукции. Она была основана Кларком Матисом, Рэнди Мерреллом и Джоном Швейцером в 1981 году как производитель высокопроизводительных походных ботинок. С 1997 года компания является дочерней компанией гиганта обувной индустрии Wolverine World Wide.
+          .products-line-slider 
+            .js-products-line-slider 
+              include modules/products/prev-1
+              include modules/products/prev-2
+              include modules/products/prev-3
+              include modules/products/prev-4
+              include modules/products/prev-1
+              include modules/products/prev-2
+              include modules/products/prev-3
+              include modules/products/prev-4
+            .products-line-slider__navigation 
+              .products-line-slider__btn.products-line-slider__btn--prev 
+                img(src="img/svg/angle-line-slider.svg", alt="").products-line-slider__btn-img
+              .products-line-slider__dots 
+              .products-line-slider__btn.products-line-slider__btn--next
+                img(src="img/svg/angle-line-slider.svg", alt="").products-line-slider__btn-img
+          .products-line-slider 
+            .js-products-line-slider 
+              include modules/products/prev-1
+              include modules/products/prev-2
+              include modules/products/prev-3
+              include modules/products/prev-4
+              include modules/products/prev-1
+              include modules/products/prev-2
+              include modules/products/prev-3
+              include modules/products/prev-4
+            .products-line-slider__navigation 
+              .products-line-slider__btn.products-line-slider__btn--prev 
+                img(src="img/svg/angle-line-slider.svg", alt="").products-line-slider__btn-img
+              .products-line-slider__dots 
+              .products-line-slider__btn.products-line-slider__btn--next
+                img(src="img/svg/angle-line-slider.svg", alt="").products-line-slider__btn-img
+    include modules/footer/footer
+    script(src="js/libs.min.js")
+    script(src="js/main.js")
