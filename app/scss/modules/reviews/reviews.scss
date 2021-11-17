@@ -11,6 +11,9 @@
       line-height: 49px;
       letter-spacing: 0.02em;
       text-transform: uppercase;
+      @media (max-width: $phone-size){
+        
+      }
     }
     &-prev__inner {
       display: flex;
