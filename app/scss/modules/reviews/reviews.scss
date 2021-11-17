@@ -1,0 +1,122 @@
+.s-reviews {
+  padding-top: 65px;
+  @media (max-width: $tablet-size) {
+    padding-top: 50px;
+  }
+  .reviews {
+    &__title {
+      text-align: center;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 49px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+    &-prev__inner {
+      display: flex;
+      justify-content: center;
+      margin-top: 64px;
+      // margin-left: 87px;
+      @media (max-width: $tablet-size) {
+        margin-top: 7px;
+      }
+    }
+    &-prev__wrapper {
+      display: flex;
+    }
+    .reviews-prev {
+      position: relative;
+      width: 303px;
+      height: 394px;
+      box-shadow: 5px 5px 30px rgba(83, 81, 79, 0.1);
+      border-radius: 8px;
+      margin-left: 53px;
+      @media (max-width: $tablet-size) {
+        margin-left: 29px;
+        width: 284px;
+        height: 369px;
+      }
+      &:first-child {
+        margin-left: 0;
+      }
+      &__img-wrapper {
+        margin: 19px 0 0 13px;
+        @media (max-width: $tablet-size) {
+          img {
+            width: 135px;
+          }
+        }
+      }
+      &__star-list {
+        display: flex;
+        position: absolute;
+        right: 33px;
+        top: 29px;
+        li {
+          margin-left: 1.5px;
+          @media (max-width: $tablet-size) {
+            img {
+              width: 15px;
+              height: 14px;
+            }
+          }
+        }
+      }
+      &__title {
+        position: absolute;
+        width: 100px;
+        height: 67px;
+        right: 20px;
+        top: 50px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.01em;
+      }
+      &__author {
+        display: block;
+        margin: 11px 0 0 14px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.01em;
+      }
+      &__date {
+        display: block;
+        margin: 6px 0 0 14px;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.01em;
+        color: #686868;
+      }
+      &__text {
+        margin: 6px 28px 22px 14px;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.01em;
+        @media (max-width: $tablet-size) {
+          font-size: 14px;
+          line-height: 17px;
+          margin: 13px 26px 13px 13px;
+        }
+      }
+    }
+    &__link {
+      padding: 12px 30px 18px;
+      background: $orange;
+      box-shadow: -5px 5px 20px rgba(255, 130, 25, 0.4);
+      border-radius: 20px;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      letter-spacing: 0.02em;
+      color: #ffffff;
+      margin: 0 auto;
+      &-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 56px;
+      }
+    }
+  }
+}

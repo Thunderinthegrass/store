@@ -1,0 +1,121 @@
+.s-promo {
+  padding-top: 70px;
+  box-shadow: 6px 6px 26px 15px rgba(0, 0, 0, 0.08);
+  .promo {
+    &__subscription {
+      display: flex;
+      justify-content: space-between;
+      &-text {
+        margin-left: 86px;
+      }
+      &-title {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 0.02em;
+        @media (max-width: $tablet-size) {
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+      &-subtitle {
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        padding-top: 9px;
+        @media (max-width: $tablet-size) {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+      &-input {
+        width: 374px;
+        height: 40px;
+        border: 1px solid #ff8219;
+        border-radius: 18px;
+        padding-left: 20px;
+        @media (max-width: $tablet-size) {
+          width: 278px;
+          height: 34px;
+        }
+        &-wrapper {
+          padding-top: 14px;
+        }
+      }
+      &-btn {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.01em;
+        color: #ffffff;
+        background: $orange;
+        box-shadow: -5px 5px 20px rgba(255, 130, 25, 0.4);
+        border-radius: 18px;
+        padding: 7px 12px 13px;
+        margin-right: 86px;
+        margin-left: 29px;
+        cursor: pointer;
+        @media (max-width: $tablet-size) {
+          margin-right: 26px;
+          margin-left: 35px;
+        }
+      }
+    }
+    &__installment {
+      display: flex;
+      margin-top: 172px;
+      @media (max-width: $tablet-size) {
+        margin-top: 99px;
+      }
+      &-bank {
+        &-name {
+          margin-left: 102px;
+        }
+        &-img {
+          img {
+            width: 588px;
+            height: 496px;
+            @media (max-width: $tablet-size) {
+              width: 532px;
+            }
+          }
+        }
+      }
+      &-info {
+        text-align: center;
+        margin-top: 151px;
+        margin-left: 16px;
+        span {
+          display: block;
+          text-align: center;
+        }
+      }
+      &-title {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 102.9%;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: $orange;
+        @media (max-width: $tablet-size) {
+          font-size: 50px;
+        }
+      }
+      &-subtitle {
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 45px;
+        letter-spacing: 0.01em;
+        @media (max-width: $tablet-size) {
+          font-size: 35px;
+        }
+      }
+      &-text {
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        margin-top: 11px;
+      }
+    }
+  }
+}

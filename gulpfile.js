@@ -6,7 +6,7 @@ const uglify = require('gulp-uglify-es').default;
 const autoprefixer = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
 const del = require('del');
-const pug = require('gulp-pug');
+// const pug = require('gulp-pug');
 
 function browsersync() {
   browserSync.init({
@@ -20,14 +20,14 @@ function cleanDist() {
   return del('dist')
 }
 
-function pug2html() {
-  return src('app/pug/**/**/*.pug')
-    .pipe(pug({
-      pretty:true
-    }))
-    .pipe(dest('app'))
-    .pipe(browserSync.stream())
-}
+// function pug2html() {
+//   return src('app/pug/**/**/*.pug')
+//     .pipe(pug({
+//       pretty:true
+//     }))
+//     .pipe(dest('app'))
+//     .pipe(browserSync.stream())
+// }
 
 function images() {
   return src('app/img/**/*')
@@ -106,7 +106,7 @@ function build() {
 function watching() {
   watch(['app/scss/**/*.scss'], styles);
   watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
-  watch(['app/pug/**/*pug'], pug2html);
+  // watch(['app/pug/**/*pug'], pug2html);
   watch(['app/*html']).on('change', browserSync.reload);
 }
 
@@ -118,7 +118,8 @@ exports.browsersync = browsersync;
 exports.scripts = scripts;
 exports.images = images;
 exports.cleanDist = cleanDist;
-exports.pug2html = pug2html;
+// exports.pug2html = pug2html;
 
 exports.build = series(cleanDist, images, build);
-exports.default = parallel(pug2html, styles, css, scripts, js, browsersync, watching);
+// exports.default = parallel(pug2html, styles, css, scripts, js, browsersync, watching);
+exports.default = parallel(styles, css, scripts, js, browsersync, watching);

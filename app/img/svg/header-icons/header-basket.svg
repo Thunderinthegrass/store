@@ -1,0 +1,13 @@
+<svg width="36" height="28" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.33 30.38">
+	<defs>
+		<style>
+			.cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}
+		</style>
+	</defs>
+	<title>
+		header-basket
+	</title>
+	<path class="cls-1" d="M-31.68,37l8.27.88,1.25,6.16L-19.4,57.7H2.25L4.66,44.05H-16.71" transform="translate(32.68 -36.01)" />
+	<circle class="cls-1" cx="32.09" cy="26.86" r="2.52" />
+	<circle class="cls-1" cx="18.2" cy="26.86" r="2.52" />
+</svg>

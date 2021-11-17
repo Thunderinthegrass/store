@@ -1,20 +1,15 @@
 @import "vars";
 @import "fonts";
 @import "global";
-@import "media";
 @import "modules/header/header";
+// @import "media";
+// @import "modules/header/header";
 @import "modules/banner/banner";
-@import 'small-block';
-@import 'modules/navigation/navigation';
-@import "modules/search/search";
-@import "modules/buttons/buttons";
-@import "modules/titles/titles";
-@import "modules/tabs/tabs";
-@import "modules/product/product";
-@import "modules/information/information";
-@import "modules/about/about";
-@import "modules/preloader/preloader";
+@import "modules/hits/hits";
+@import "modules/reviews/reviews";
+@import "modules/articles/articles";
+@import "modules/location/location";
+@import "modules/promo/promo";
 @import "modules/footer/footer";
-// @import 'mixins.scss';
 
 

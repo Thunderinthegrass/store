@@ -1,0 +1,218 @@
+.header {
+  background: $orange;
+  &__top {
+    display: flex;
+    height: 132px;
+    @media (max-width: $tablet-size) {
+      height: 107px;
+    }
+    @media (max-width: $phone-size) {
+      height: 64px;
+    }
+  }
+  &__logo-wrapper {
+    margin-top: 32px;
+    margin-left: 83px;
+    @media (max-width: $tablet-size) {
+      margin-top: 29px;
+      margin-left: 22px;
+      width: 215px;
+      height: 48px;
+      img {
+        width: 215px;
+        height: 48px;
+      }
+    }
+    @media (max-width: $phone-size) {
+      margin-top: 13px;
+      margin-left: 9px;
+      width: 170px;
+      height: 38px;
+      img {
+        width: 170px;
+        height: 38px;
+      }
+    }
+  }
+  &__phones {
+    margin-left: 41px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media (max-width: $tablet-size) {
+      margin-left: 23px;
+    }
+    @media (max-width: $phone-size) {
+      display: none;
+    }
+  }
+  &__phone {
+    font-size: 18px;
+    line-height: 21.94px;
+    color: #fff;
+    &:last-child {
+      margin-top: 7px;
+    }
+  }
+  &__since {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin-top: 21px;
+    margin-left: 11px;
+    display: none;
+    @media (max-width: $phone-size) {
+      display: block;
+    }
+  }
+  &-search {
+    margin: 62px 0 0 21px;
+    position: relative;
+    @media (max-width: $tablet-size) {
+      margin-top: 49px;
+    }
+    @media (max-width: $phone-size) {
+      margin-left: 19px;
+      margin-top: 19px;
+    }
+    &__input {
+      width: 252px;
+      height: 28px;
+      border-radius: 18px;
+      padding-left: 10px;
+      font-weight: 400;
+      @media (max-width: $tablet-size) {
+        width: 266px;
+      }
+      @media (max-width: $phone-size) {
+        display: none;
+      }
+    }
+    &__btn {
+      position: absolute;
+      right: 0;
+      top: 2px;
+      background: transparent;
+      cursor: pointer;
+      .search-icon {
+        height: 20px;
+        fill: rgba(6, 6, 6, 0.69);
+        @media (max-width: $phone-size) {
+          height: 24px;
+          fill: #ffffff;
+        }
+      }
+      @media (max-width: $phone-size) {
+        position: static;
+        padding: 0;
+      }
+    }
+  }
+  &__buttons {
+    display: flex;
+    margin: 41px 0 0 24px;
+    @media (max-width: $tablet-size) {
+      margin-top: 31px;
+    }
+    @media (max-width: $phone-size) {
+      display: none;
+    }
+    &-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 14px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+    &-compare {
+      .header__compare-icon {
+        height: 29px;
+        width: 23px;
+        margin-bottom: 3px;
+      }
+    }
+    &-favorites {
+      margin-top: 1px;
+      .header__favorites-icon {
+        width: 30px;
+        height: 27px;
+        margin-bottom: 4px;
+      }
+    }
+    &-basket {
+      position: relative;
+    }
+    .header__basket {
+      &-bell {
+        position: absolute;
+        right: 5px;
+        top: -1px;
+        width: 16px;
+        height: 15px;
+        background: #fff;
+        color: $orange;
+        font-size: 13px;
+        font-weight: 500;
+        border-radius: 50%;
+        text-align: center;
+      }
+      &-icon {
+        height: 28px;
+        width: 36px;
+        margin-bottom: 2px;
+        margin-top: 1px;
+      }
+    }
+    &-text {
+      font-size: 14px;
+      color: #fff;
+      line-height: 17.07px;
+    }
+  }
+  &__mobile-menu-btn{
+    padding: 0;
+    background: transparent;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+    display: none;
+    @media (max-width: $phone-size){
+      display: block;
+      margin-top: 21px;
+      margin-left: 23px;
+    }
+  }
+  &__nav {
+    background: #4a4645;
+    padding: 15px 0 16px;
+    @media (max-width: $phone-size) {
+      display: none;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+    &-list {
+      display: flex;
+      align-items: center;
+    }
+    &-item {
+      margin-left: 32px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+    &-link {
+      color: #fff;
+      line-height: 21.94px;
+      font-weight: 500;
+      font-size: 18px;
+      @media (max-width: $tablet-size) {
+        font-size: 16px;
+      }
+    }
+  }
+}

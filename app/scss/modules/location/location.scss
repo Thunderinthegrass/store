@@ -1,0 +1,106 @@
+.s-location {
+  padding-top: 100px;
+  padding-bottom: 136px;
+  @media (max-width: $tablet-size){
+    padding-top: 97px;
+    padding-bottom: 26px;
+  }
+  .location {
+    background-image: url(../../../img/svg/path.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+    &__title {
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 49px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    &__inner {
+      display: flex;
+      // justify-content: space-between;
+      margin-top: 35px;
+      @media (max-width: $tablet-size){
+        margin-top: 20px;
+      }
+    }
+    &__branches {
+      display: flex;
+      position: relative;
+      margin-left: 172px;
+      padding-top: 230px;
+      padding-right: 38px;
+      @media (max-width: $tablet-size){
+        margin-left: 57px;
+      }
+      &-title {
+        position: relative;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.01em;
+        color: $orange;
+        width: 211px;
+        margin-top: 15px;
+        text-transform: uppercase;
+        cursor: pointer;
+        &::after {
+          position: absolute;
+          content: "";
+          width: 11px;
+          height: 20px;
+          top: 0;
+          right: 0;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        &--active {
+          margin-top: 0;
+          &::after {
+            background-image: url(../../../img/svg/angle-right.svg);
+          }
+        }
+      }
+      &-info {
+        width: 232px;
+        margin-left: 29px;
+      }
+      &-phone {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.01em;
+        color: #060606;
+      }
+      &-address {
+        margin-top: 12px;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.01em;
+      }
+    }
+    &__map {
+      width: 535px;
+      height: 539px;
+      border-radius: 8px;
+      background-image: url(../../../img/content/location/map.jpg);
+    }
+    &__directions {
+      position: absolute;
+      right: 29px;
+      bottom: 151px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.02em;
+      color: #ffffff;
+      padding: 8px 20px 13px 20px;
+      border-radius: 18px;
+      background: $orange;
+      cursor: pointer;
+    }
+  }
+}

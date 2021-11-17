@@ -5,7 +5,8 @@ html {
 body {
   font-family: $main-font;
   height: 100%;
-  color: $mine-shaft;
+  color: $base-font-color;
+  box-sizing: border-box;
 }
 h1,
 h2,
@@ -53,43 +54,43 @@ button {
 *::after {
   box-sizing: border-box;
 }
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-.content {
-  flex: 1 0 auto;
-}
+// .wrapper {
+//   display: flex;
+//   flex-direction: column;
+//   height: 100%;
+// }
+// .content {
+//   flex: 1 0 auto;
+// }
 .container {
   margin: 0 auto;
   max-width: $content-size;
-  padding: 0 15px;
+  // padding: 0 15px;
   width: 100%;
 }
-.fixed {
-  overflow: hidden;
-}
-.d-none {
-  display: none;
-}
-.border--active{
-  border-color: $sunset-orange;
-}
-.op0 {
-  opacity: 0;
-}
-.color--active {
-  border: 1px solid $sunset-orange;
-}
-.anim-opasity {
-  animation: opasity0 0.3s linear forwards;
-}
-@keyframes opasity0 {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
+// .fixed {
+//   overflow: hidden;
+// }
+// .d-none {
+//   display: none;
+// }
+// .border--active{
+//   border-color: $sunset-orange;
+// }
+// .op0 {
+//   opacity: 0;
+// }
+// .color--active {
+//   border: 1px solid $sunset-orange;
+// }
+// .anim-opasity {
+//   animation: opasity0 0.3s linear forwards;
+// }
+// @keyframes opasity0 {
+//   0% {
+//     opacity: 1;
+//   }
+//   100% {
+//     opacity: 0;
+//   }
+// }

@@ -1,0 +1,10 @@
+<svg width="25" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.18 20.28">
+	<defs>
+		<style>
+			.cls-1{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;}
+		</style>
+	</defs>
+	<path class="cls-1" d="M-115.45,11.19a1.93,1.93,0,0,1-2,1.91,1.94,1.94,0,0,1-2-1.91,1.93,1.93,0,0,1,2-1.91A1.93,1.93,0,0,1-115.45,11.19Z" transform="translate(139.75 6.68)" />
+	<path class="cls-1" d="M-139.25-6.18l5.73.59.87,4.12,1.91,9.13h15l1.67-9.13h-14.81" transform="translate(139.75 6.68)" />
+	<path class="cls-1" d="M-125.49,11.19a1.94,1.94,0,0,1-2,1.91,1.94,1.94,0,0,1-2-1.91,1.93,1.93,0,0,1,2-1.91A1.93,1.93,0,0,1-125.49,11.19Z" transform="translate(139.75 6.68)" />
+</svg>

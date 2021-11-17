@@ -1,1418 +1,608 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/libs.min.css">
-    <link rel="stylesheet" href="../css/style.min.css">
-    <title>Физкульт-мастер</title>
-  </head>
-  <body class="fixed main-page">
-    <div class="preloader">
-      <div class="preloader-wrapper">
-        <div class="gnat-1 gnat"></div>
-        <div class="gnat-2 gnat"></div>
-        <div class="gnat-3 gnat"></div>
-        <div class="gnat-4 gnat"></div>
-        <div class="gnat-5 gnat"></div>
-        <div class="gnat-6 gnat"></div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <title>sleep-system</title>
+</head>
+
+<body>
+  <!-- <p>Привет</p> -->
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <a href="#" class="header__logo-wrapper">
+          <img src="img/png/logo.png" class="header__logo" alt="Логотип">
+        </a>
+        <div class="header__phones">
+          <a class="header__phone" href="tel:+78124253757">78124253757</a>
+          <a class="header__phone" href="tel:+79117943496">79117943496</a>
+        </div>
+        <div class="header__since">
+          <span>Since 1999</span>
+        </div>
+        <div class="header__search header-search">
+          <input type="text" class="header-search__input" placeholder="Поиск по товарам">
+          <button class="header-search__btn">
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.69 56.69">
+              <path
+                d="M216.54-51.83,201.31-67.07a22.91,22.91,0,0,0,5.14-14.49,23,23,0,0,0-23-23,23,23,0,0,0-23,23,23,23,0,0,0,23,23A22.84,22.84,0,0,0,198-63.75L213.21-48.5a2.36,2.36,0,0,0,1.64.66,2.37,2.37,0,0,0,2.37-2.37A2.31,2.31,0,0,0,216.54-51.83ZM183.43-63.42a18.1,18.1,0,0,1-18.1-18.11,18.1,18.1,0,0,1,18.1-18.11,18.11,18.11,0,0,1,18.11,18.11A18.11,18.11,0,0,1,183.43-63.42Z"
+                transform="translate(-160.53 104.53)" />
+            </svg>
+          </button>
+        </div>
+        <div class="header__buttons">
+          <a href="#" class="header__buttons-link header__buttons-compare">
+            <img src="img/svg/header-icons/header-compare.svg" class="header__compare-icon" alt="Сравнение">
+            <span class="header__buttons-text">сравнение</span>
+          </a>
+          <a href="#" class="header__buttons-link header__buttons-favorites">
+            <img src="img/svg/header-icons/header-favorites.svg" class="header__favorites-icon" alt="Избранное">
+            <span class="header__buttons-text">избранное</span>
+          </a>
+          <a href="#" class="header__buttons-link header__buttons-basket">
+            <span class="header__basket-bell">5</span>
+            <img src="img/svg/header-icons/header-basket.svg" class="header__basket-icon" alt="Корзина">
+            <span class="header__buttons-text">корзина</span>
+          </a>
+        </div>
+        <button class="header__mobile-menu-btn">
+          <img src="img/svg/header-icons/mobile-menu-btn.svg" alt="Кнопка мобильного меню">
+        </button>
       </div>
     </div>
-    <header class="header">  
-      <div class="header__top">
-        <div class="container">
-          <div class="header__content">
-            <nav class="header__nav header-nav"> 
-              <ul class="inform-nav__list"> 
-                      <li class="inform-nav__item"> <a class="inform-nav__link" href="#">О компании</a></li>
-                      <li class="inform-nav__item"> <a class="inform-nav__link" href="#">Доставка и оплата</a></li>
-                      <li class="inform-nav__item"> <a class="inform-nav__link" href="#">Акции</a></li>
-                      <li class="inform-nav__item"> <a class="inform-nav__link" href="#">Оптовикам</a></li>
-                      <li class="inform-nav__item"> <a class="inform-nav__link" href="#">Новости</a></li>
-                      <li class="inform-nav__item"> <a class="inform-nav__link" href="#">Гарантии</a></li>
-                      <li class="inform-nav__item"> <a class="inform-nav__link" href="#">Контакты</a></li>
-              </ul>
-            </nav>
-            <nav class="header__nav header__nav--right header-nav"> 
-              <ul class="inform-nav__list"> 
-                      <li class="inform-nav__item"> <a class="inform-nav__link" href="">Регистрация</a></li>
-                      <li class="inform-nav__item"> <a class="inform-nav__link" href="">Вход</a></li>
-              </ul>
-            </nav>
-          </div>
+    <nav class="header__nav">
+      <div class="container">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a href="#" class="header__nav-link">Магазины</a></li>
+          <li class="header__nav-item"><a href="#" class="header__nav-link">Бренды</a></li>
+          <li class="header__nav-item"><a href="#" class="header__nav-link">Матрасы</a></li>
+          <li class="header__nav-item"><a href="#" class="header__nav-link">Подушки</a></li>
+          <li class="header__nav-item"><a href="#" class="header__nav-link">Кровати</a></li>
+          <li class="header__nav-item"><a href="#" class="header__nav-link">Текстиль</a></li>
+          <li class="header__nav-item"><a href="#" class="header__nav-link">Аксессуары</a></li>
+          <li class="header__nav-item"><a href="#" class="header__nav-link">Акции</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section class="s-banner">
+    <div class="container">
+      <div class="banner">
+        <div class="banner__inner">{
+          <p class="banner__title">
+            Домашний тест-драйв!
+          </p>
+          <a href="#" class="banner__link">бесплатно!</a>
         </div>
       </div>
-      <div class="header__main">
-        <div class="container">
-          <div class="header__content"><a class="header__logo logo" href="index.html"><img class="logo__img" src="img/png/logo.png" alt="Логотип"></a>
-            <div class="header__phones"> 
-              <div class="header__item header__item--mobile"> <a class="header__phone" href="tel:82345678910">8 (123) 456-78-91 </a><a class="header__link" href=""> Заказать звонок </a></div>
-              <div class="header__item"> <a class="header__phone" href="tel:82345678910">8 (123) 456-78-91 </a><span class="header__description"> Звонок бесплатный</span></div>
-            </div>
-            <div class="header__address header-address"><img class="header-address__icon" src="img/svg/location.svg" alt=""><span class="header-address__text">Байбышевск, ул Схалазменского 12</span></div>
-            <div class="header__shop">
-              <div class="header-goods"><span class="header-goods__price">0 р</span><span class="header-goods__count">0 товаров</span></div>
-              <div class="header-basket"><img class="header-basket__icon" src="img/svg/cart.svg"><span class="header-basket__text">Корзина</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="header__menu"> 
-        <div class="container">
-          <div class="header__content">
-            <nav class="header__main-nav main-nav">
-              <ul class="main-nav__list">
-                <li class="main-nav__item"><a class="main-nav__link" href="#">Одежда</a>
-                  <div class="main-nav__dropdown-wrapper">
-                    <div class="main-nav__dropdown">
-                      <ul class="main-subnav__list">
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с надувными колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с надувными колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Электросамокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные электросамокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские трехколесные электросамокаты </span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Электросамокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Элуктросамокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Самокаты с двумя амортизаторами </span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с двумя амортизаторами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с двумя амортизаторами</span></a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+    </div>
+  </section>
+  <section class="s-hits">
+    <div class="container">
+      <div class="hits">
+        <h2 class="hits__title">ХИТЫ ПРОДАЖ</h2>
+        <div class="hits__inner">
+          <div class="product-prev__wrapper">
+            <div class="product-prev">
+              <span class="product-prev__sale">
+                -20%
+              </span>
+              <div class="product-prev__img-wrapper">
+                <!-- <img src="img/content/hits/product-prev-img.jpg" alt="изображение товара" class="hits__img"> -->
+              </div>
+              <ul class="product-prev__star-list star-list">
+                <li>
+                  <img src="img/svg/star.svg" alt="звезда">
                 </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#">Обувь</a>
-                  <div class="main-nav__dropdown-wrapper">
-                    <div class="main-nav__dropdown">
-                      <div class="main-nav__col">
-                        <ul class="main-subnav__list">
-                          <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Беговелы</span>
-                              <div class="main-subnav__icon"></div></a>
-                            <ul class="main-subnav__list">
-                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Беговелы большими колесами</span></a></li>
-                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Беговелы надувными колесами</span></a></li>
-                            </ul>
-                          </li>
-                          <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты</span>
-                              <div class="main-subnav__icon"></div></a>
-                            <ul class="main-subnav__list">
-                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские двухколесные самокаты</span></a></li>
-                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские трехколесные самокаты</span></a></li>
-                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с большими колесами</span></a></li>
-                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с надувными колесами</span></a></li>
-                            </ul>
-                          </li>
-                          <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты</span>
-                              <div class="main-subnav__icon"></div></a>
-                            <ul class="main-subnav__list">
-                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские двухколесные самокаты</span></a></li>
-                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские трехколесные самокаты</span></a></li>
-                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты с большими колесами</span></a></li>
-                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты с надувными колесами</span></a></li>
-                            </ul>
-                          </li>
-                          <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты</span>
-                              <div class="main-subnav__icon"></div></a>
-                            <ul class="main-subnav__list">
-                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные двухколесные самокаты</span></a></li>
-                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные трехколесные самокаты</span></a></li>
-                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с большими колесами</span></a></li>
-                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с надувными колесами</span></a></li>
-                            </ul>
-                          </li>
-                          <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты</span>
-                              <div class="main-subnav__icon"></div></a>
-                            <ul class="main-subnav__list">
-                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые двухколесные самокаты</span></a></li>
-                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые трехколесные самокаты</span></a></li>
-                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты с большими колесами</span></a></li>
-                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты с надувными колесами</span></a></li>
-                            </ul>
-                          </li>
-                          <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Электросамокаты</span>
-                              <div class="main-subnav__icon"></div></a>
-                            <ul class="main-subnav__list">
-                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные электросамокаты</span></a></li>
-                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские трехколесные электросамокаты </span></a></li>
-                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Электросамокаты с большими колесами</span></a></li>
-                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Элуктросамокаты с надувными колесами</span></a></li>
-                            </ul>
-                          </li>
-                          <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Самокаты с двумя амортизаторами </span>
-                              <div class="main-subnav__icon"></div></a>
-                            <ul class="main-subnav__list">
-                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с двумя амортизаторами</span></a></li>
-                              <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с двумя амортизаторами</span></a></li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="main-nav__col"></div>
-                    </div>
-                  </div>
+                <li>
+                  <img src="img/svg/star.svg" alt="звезда">
                 </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#">Детям</a>
-                  <div class="main-nav__dropdown-wrapper">
-                    <div class="main-nav__dropdown">
-                      <ul class="main-subnav__list">
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с надувными колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с надувными колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Электросамокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные электросамокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские трехколесные электросамокаты </span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Электросамокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Элуктросамокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Самокаты с двумя амортизаторами </span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с двумя амортизаторами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с двумя амортизаторами</span></a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+                <li>
+                  <img src="img/svg/star.svg" alt="звезда">
                 </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#">Тренажеры</a>
-                  <div class="main-nav__dropdown-wrapper">
-                    <div class="main-nav__dropdown">
-                      <ul class="main-subnav__list">
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с надувными колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с надувными колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Электросамокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные электросамокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские трехколесные электросамокаты </span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Электросамокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Элуктросамокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Самокаты с двумя амортизаторами </span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с двумя амортизаторами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с двумя амортизаторами</span></a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+                <li>
+                  <img src="img/svg/star.svg" alt="звезда">
                 </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#">Экипировка</a>
-                  <div class="main-nav__dropdown-wrapper">
-                    <div class="main-nav__dropdown">
-                      <ul class="main-subnav__list">
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с надувными колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с надувными колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Электросамокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные электросамокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские трехколесные электросамокаты </span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Электросамокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Элуктросамокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Самокаты с двумя амортизаторами </span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с двумя амортизаторами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с двумя амортизаторами</span></a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+                <li>
+                  <img src="img/svg/star.svg" alt="звезда">
                 </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#">Туризм</a>
-                  <div class="main-nav__dropdown-wrapper">
-                    <div class="main-nav__dropdown">
-                      <ul class="main-subnav__list">
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с надувными колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с надувными колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Электросамокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные электросамокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские трехколесные электросамокаты </span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Электросамокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Элуктросамокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Самокаты с двумя амортизаторами </span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с двумя амортизаторами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с двумя амортизаторами</span></a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#">Аксессуары</a>
-                  <div class="main-nav__dropdown-wrapper">
-                    <div class="main-nav__dropdown">
-                      <ul class="main-subnav__list">
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с надувными колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Городские самокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с надувными колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Складные самокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые двухколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые трехколесные самокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Трюковые самокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Электросамокаты</span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые двухколесные электросамокаты</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские трехколесные электросамокаты </span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Электросамокаты с большими колесами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Элуктросамокаты с надувными колесами</span></a></li>
-                          </ul>
-                        </li>
-                        <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Самокаты с двумя амортизаторами </span>
-                            <div class="main-subnav__icon"></div></a>
-                          <ul class="main-subnav__list">
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Детские самокаты с двумя амортизаторами</span></a></li>
-                            <li class="main-subnav__item"><a class="main-subnav__link" href=""><span class="main-subnav__text">Взрослые самокаты с двумя амортизаторами</span></a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#">Ещё<img class="main-nav__icon" src="img/svg/angle-bottom.svg" alt="Ещё"></a></li>
               </ul>
-            </nav>
-            <div class="header__search search search--hide"><img class="search__icon search--hide" src="img/svg/search.svg" alt="Поиск">
-              <div class="search__body search--hide">
-                <form class="search__form search--hide">
-                  <div class="search__input-wrapper search--hide">
-                    <input class="search__input search--hide" placeholder="Я хочу купить...">
-                    <div class="search__clear search--hide"><img class="search__clear-icon search--hide" src="img/svg/close.svg" alt=""></div>
-                  </div>
-                  <input class="search__btn search--hide" type="submit" value="Найти">
-                </form>
+              <a href="#" class="product-prev__title">
+                Ортопедическое основание Froli TF 2
+              </a>
+              <span class="product-prev__subtitle">
+                Универсальная средняя жесткость
+              </span>
+              <span class="product-prev__size">
+                380x90
+              </span>
+              <div class="product-prev__price">
+                <span class="product-prev__price-old">
+                  50 900Р
+                </span>
+                <span class="product-prev__price-current">
+                  30 900Р
+                </span>
+              </div>
+              <div class="product-prev__buttons">
+                <a href="#" class="product-prev__compare">
+                  <img src="img/svg/product-prev/product-compare.svg" alt="сравнение"
+                    class="product-prev__compare-icon">
+                </a>
+                <a href="#" class="product-prev__favorites">
+                  <img src="img/svg/product-prev/product-favorites.svg" alt="избранное"
+                    class="product-prev__favorites-icon">
+                </a>
+                <a href="#" class="product-prev__basket">
+                  <span class="product-prev__basket-bell">+</span>
+                  <img src="img/svg/product-prev/product-basket.svg" alt="корзина" class="product-prev__basket-icon">
+                </a>
+              </div>
+            </div>
+            <div class="product-prev">
+              <span class="product-prev__sale">
+                -20%
+              </span>
+              <div class="product-prev__img-wrapper">
+                <!-- <img src="img/content/hits/product-prev-img.jpg" alt="изображение товара" class="hits__img"> -->
+              </div>
+              <ul class="product-prev__star-list star-list">
+                <li>
+                  <img src="img/svg/star.svg" alt="звезда">
+                </li>
+                <li>
+                  <img src="img/svg/star.svg" alt="звезда">
+                </li>
+                <li>
+                  <img src="img/svg/star.svg" alt="звезда">
+                </li>
+                <li>
+                  <img src="img/svg/star.svg" alt="звезда">
+                </li>
+                <li>
+                  <img src="img/svg/star.svg" alt="звезда">
+                </li>
+              </ul>
+              <a href="#" class="product-prev__title">
+                Ортопедическое основание Froli TF 2
+              </a>
+              <span class="product-prev__subtitle">
+                Универсальная средняя жесткость
+              </span>
+              <span class="product-prev__size">
+                380x90
+              </span>
+              <div class="product-prev__price">
+                <span class="product-prev__price-old">
+                  50 900Р
+                </span>
+                <span class="product-prev__price-current">
+                  30 900Р
+                </span>
+              </div>
+              <div class="product-prev__buttons">
+                <a href="#" class="product-prev__compare">
+                  <img src="img/svg/product-prev/product-compare.svg" alt="сравнение"
+                    class="product-prev__compare-icon">
+                </a>
+                <a href="#" class="product-prev__favorites">
+                  <img src="img/svg/product-prev/product-favorites.svg" alt="избранное"
+                    class="product-prev__favorites-icon">
+                </a>
+                <a href="#" class="product-prev__basket">
+                  <span class="product-prev__basket-bell">+</span>
+                  <img src="img/svg/product-prev/product-basket.svg" alt="корзина" class="product-prev__basket-icon">
+                </a>
+              </div>
+            </div>
+            <div class="product-prev">
+              <span class="product-prev__sale">
+                -20%
+              </span>
+              <div class="product-prev__img-wrapper">
+                <!-- <img src="img/content/hits/product-prev-img.jpg" alt="изображение товара" class="hits__img"> -->
+              </div>
+              <ul class="product-prev__star-list star-list">
+                <li>
+                  <img src="img/svg/star.svg" alt="звезда">
+                </li>
+                <li>
+                  <img src="img/svg/star.svg" alt="звезда">
+                </li>
+                <li>
+                  <img src="img/svg/star.svg" alt="звезда">
+                </li>
+                <li>
+                  <img src="img/svg/star.svg" alt="звезда">
+                </li>
+                <li>
+                  <img src="img/svg/star.svg" alt="звезда">
+                </li>
+              </ul>
+              <a href="#" class="product-prev__title">
+                Ортопедическое основание Froli TF 2
+              </a>
+              <span class="product-prev__subtitle">
+                Универсальная средняя жесткость
+              </span>
+              <span class="product-prev__size">
+                380x90
+              </span>
+              <div class="product-prev__price">
+                <span class="product-prev__price-old">
+                  50 900Р
+                </span>
+                <span class="product-prev__price-current">
+                  30 900Р
+                </span>
+              </div>
+              <div class="product-prev__buttons">
+                <a href="#" class="product-prev__compare">
+                  <img src="img/svg/product-prev/product-compare.svg" alt="сравнение"
+                    class="product-prev__compare-icon">
+                </a>
+                <a href="#" class="product-prev__favorites">
+                  <img src="img/svg/product-prev/product-favorites.svg" alt="избранное"
+                    class="product-prev__favorites-icon">
+                </a>
+                <a href="#" class="product-prev__basket">
+                  <span class="product-prev__basket-bell">+</span>
+                  <img src="img/svg/product-prev/product-basket.svg" alt="корзина" class="product-prev__basket-icon">
+                </a>
+              </div>
+            </div>
+            <div class="product-prev">
+              <span class="product-prev__sale">
+                -20%
+              </span>
+              <div class="product-prev__img-wrapper">
+                <!-- <img src="img/content/hits/product-prev-img.jpg" alt="изображение товара" class="hits__img"> -->
+              </div>
+              <ul class="product-prev__star-list star-list">
+                <li>
+                  <img src="img/svg/star.svg" alt="звезда">
+                </li>
+                <li>
+                  <img src="img/svg/star.svg" alt="звезда">
+                </li>
+                <li>
+                  <img src="img/svg/star.svg" alt="звезда">
+                </li>
+                <li>
+                  <img src="img/svg/star.svg" alt="звезда">
+                </li>
+                <li>
+                  <img src="img/svg/star.svg" alt="звезда">
+                </li>
+              </ul>
+              <a href="#" class="product-prev__title">
+                Ортопедическое основание Froli TF 2
+              </a>
+              <span class="product-prev__subtitle">
+                Универсальная средняя жесткость
+              </span>
+              <span class="product-prev__size">
+                380x90
+              </span>
+              <div class="product-prev__price">
+                <span class="product-prev__price-old">
+                  50 900Р
+                </span>
+                <span class="product-prev__price-current">
+                  30 900Р
+                </span>
+              </div>
+              <div class="product-prev__buttons">
+                <a href="#" class="product-prev__compare">
+                  <img src="img/svg/product-prev/product-compare.svg" alt="сравнение"
+                    class="product-prev__compare-icon">
+                </a>
+                <a href="#" class="product-prev__favorites">
+                  <img src="img/svg/product-prev/product-favorites.svg" alt="избранное"
+                    class="product-prev__favorites-icon">
+                </a>
+                <a href="#" class="product-prev__basket">
+                  <span class="product-prev__basket-bell">+</span>
+                  <img src="img/svg/product-prev/product-basket.svg" alt="корзина" class="product-prev__basket-icon">
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="header__mobile"> 
-        <div class="container">
-          <div class="mobile-menu"> 
-            <div class="mobile-menu__toogle">
-              <div class="mobile-menu__sandwich sandwich">
-                <div class="sandwich__line sandwich__line_top"> </div>
-                <div class="sandwich__line sandwich__line_middle"> </div>
-                <div class="sandwich__line sandwich__line_bottom"> </div>
-              </div><span class="mobile-menu__title">Каталог товаров</span>
+    </div>
+  </section>
+  <!--<section class="s-reviews">
+    <div class="container">
+      <div class="reviews">
+        <h2 class="reviews__title">ОТЗЫВЫ ПОКУПАТЕЛЕЙ</h2>
+        <div class="reviews-prev__inner">
+          <div class="reviews-prev__wrapper">
+            <div class="reviews-prev">
+              <div class="reviews-prev__img-wrapper">
+                <img src="img/content/reviews/reviews-img.jpg" alt="изображение товара" class="reviews-prev__img">
+              </div>
+              <ul class="reviews-prev__star-list star-list">
+                <li>
+                  <img src="img/svg/reviews-star.svg" alt="">
+                </li>
+                <li>
+                  <img src="img/svg/reviews-star.svg" alt="">
+                </li>
+                <li>
+                  <img src="img/svg/reviews-star.svg" alt="">
+                </li>
+                <li>
+                  <img src="img/svg/reviews-star.svg" alt="">
+                </li>
+                <li>
+                  <img src="img/svg/reviews-star.svg" alt="">
+                </li>
+              </ul>
+              <span class="reviews-prev__title">
+                MATRAC TEMPUR ORIGINAL
+              </span>
+              <span class="reviews-prev__author">Татьяна</span>
+              <span class="reviews-prev__date">08. 09. 2021</span>
+              <p class="reviews-prev__text">
+                Отличная компания, отличный матрас и кровать очень довольны. Сначала заказала один матрас и кровать, в
+                июле снова обратились в компаниюза аналогичным товаром. Всё так же чётко в срок, спокойно, без суеты,
+                быстро и очень качественно.
+              </p>
             </div>
-            <div class="mobile-menu__content"> 
-              <div class="mobile-menu__header"> <span class="mobile-menu__title">Меню</span>
-                <div class="mobile-menu__close"> 
-                  <svg class="close-icon" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 211.26 211.26">
-                    <defs>
-                      <style>.cls-1{fill:#fff;stroke:#fff;stroke-miterlimit:10;}</style>
-                    </defs>
-                    <title>close</title>
-                    <path class="cls-1" d="M437.12,380.9a10.07,10.07,0,0,1,0,14.25l-1.46,1.46a10.07,10.07,0,0,1-14.25,0L335,310.15l-86.47,86.46a10.06,10.06,0,0,1-14.24,0l-1.47-1.46a10.09,10.09,0,0,1,0-14.25l86.46-86.46L232.77,208a10.07,10.07,0,0,1,0-14.24l1.47-1.47a10.07,10.07,0,0,1,14.24,0L335,278.72l86.46-86.46a10.09,10.09,0,0,1,14.25,0l1.46,1.47a10.06,10.06,0,0,1,0,14.24l-86.46,86.47Z" transform="translate(-229.32 -188.81)"></path>
-                  </svg>
-                </div>
+            <div class="reviews-prev">
+              <div class="reviews-prev__img-wrapper">
+                <img src="img/content/reviews/reviews-img.jpg" alt="изображение товара" class="reviews-prev__img">
               </div>
-              <div class="mobile-menu__body">
-                <nav class="catalog-nav"> 
-                  <ul class="catalog-nav__list"> 
-                          <li class="catalog-nav__item"> <a class="catalog-nav__link" href=""> <span class="catalog-nav__text">Одежда</span><img class="main-subnav__icon" src="img/svg/angle-right.svg" alt=""></a></li>
-                          <li class="catalog-nav__item"> <a class="catalog-nav__link" href=""> <span class="catalog-nav__text">Обувь</span><img class="main-subnav__icon" src="img/svg/angle-right.svg" alt=""></a></li>
-                          <li class="catalog-nav__item"> <a class="catalog-nav__link" href=""> <span class="catalog-nav__text">Детям</span><img class="main-subnav__icon" src="img/svg/angle-right.svg" alt=""></a></li>
-                          <li class="catalog-nav__item"> <a class="catalog-nav__link" href=""> <span class="catalog-nav__text">Тренажеры</span><img class="main-subnav__icon" src="img/svg/angle-right.svg" alt=""></a></li>
-                          <li class="catalog-nav__item"> <a class="catalog-nav__link" href=""> <span class="catalog-nav__text">Экипировка</span><img class="main-subnav__icon" src="img/svg/angle-right.svg" alt=""></a></li>
-                          <li class="catalog-nav__item"> <a class="catalog-nav__link" href=""> <span class="catalog-nav__text">Туризм</span><img class="main-subnav__icon" src="img/svg/angle-right.svg" alt=""></a></li>
-                          <li class="catalog-nav__item"> <a class="catalog-nav__link" href=""> <span class="catalog-nav__text">Аксессуары</span><img class="main-subnav__icon" src="img/svg/angle-right.svg" alt=""></a></li>
-                  </ul>
-                </nav>
-                <nav class="inform-nav"> 
-                  <ul class="inform-nav__list"> 
-                          <li class="inform-nav__item"> <a class="inform-nav__link" href="">О компании</a></li>
-                          <li class="inform-nav__item"> <a class="inform-nav__link" href="">Доставка и оплата</a></li>
-                          <li class="inform-nav__item"> <a class="inform-nav__link" href="">Акции</a></li>
-                          <li class="inform-nav__item"> <a class="inform-nav__link" href="">Оптовикам</a></li>
-                          <li class="inform-nav__item"> <a class="inform-nav__link" href="">Новости</a></li>
-                          <li class="inform-nav__item"> <a class="inform-nav__link" href="">Гарантии</a></li>
-                          <li class="inform-nav__item"> <a class="inform-nav__link" href="">Контакты</a></li>
-                          <li class="inform-nav__item"> <a class="inform-nav__link" href="">Регистрация</a></li>
-                          <li class="inform-nav__item"> <a class="inform-nav__link" href="">Вход</a></li>
-                  </ul>
-                </nav>
+              <ul class="reviews-prev__star-list star-list">
+                <li>
+                  <img src="img/svg/reviews-star.svg" alt="">
+                </li>
+                <li>
+                  <img src="img/svg/reviews-star.svg" alt="">
+                </li>
+                <li>
+                  <img src="img/svg/reviews-star.svg" alt="">
+                </li>
+                <li>
+                  <img src="img/svg/reviews-star.svg" alt="">
+                </li>
+                <li>
+                  <img src="img/svg/reviews-star.svg" alt="">
+                </li>
+              </ul>
+              <span class="reviews-prev__title">
+                MATRAC TEMPUR ORIGINAL
+              </span>
+              <span class="reviews-prev__author">Татьяна</span>
+              <span class="reviews-prev__date">08. 09. 2021</span>
+              <p class="reviews-prev__text">
+                Отличная компания, отличный матрас и кровать очень довольны. Сначала заказала один матрас и кровать, в
+                июле снова обратились в компаниюза аналогичным товаром. Всё так же чётко в срок, спокойно, без суеты,
+                быстро и очень качественно.
+              </p>
+            </div>
+            <div class="reviews-prev">
+              <div class="reviews-prev__img-wrapper">
+                <img src="img/content/reviews/reviews-img.jpg" alt="изображение товара" class="reviews-prev__img">
               </div>
+              <ul class="reviews-prev__star-list star-list">
+                <li>
+                  <img src="img/svg/reviews-star.svg" alt="">
+                </li>
+                <li>
+                  <img src="img/svg/reviews-star.svg" alt="">
+                </li>
+                <li>
+                  <img src="img/svg/reviews-star.svg" alt="">
+                </li>
+                <li>
+                  <img src="img/svg/reviews-star.svg" alt="">
+                </li>
+                <li>
+                  <img src="img/svg/reviews-star.svg" alt="">
+                </li>
+              </ul>
+              <span class="reviews-prev__title">
+                MATRAC TEMPUR ORIGINAL
+              </span>
+              <span class="reviews-prev__author">Татьяна</span>
+              <span class="reviews-prev__date">08. 09. 2021</span>
+              <p class="reviews-prev__text">
+                Отличная компания, отличный матрас и кровать очень довольны. Сначала заказала один матрас и кровать, в
+                июле снова обратились в компаниюза аналогичным товаром. Всё так же чётко в срок, спокойно, без суеты,
+                быстро и очень качественно.
+              </p>
             </div>
           </div>
-          <div class="search search--hide">
-            <div class="search__body search--hide">
-              <form class="search__form search--hide">
-                <div class="search__input-wrapper search--hide">
-                  <input class="search__input search--hide" placeholder="Я хочу купить...">
-                  <div class="search__clear search--hide"><img class="search__clear-icon search--hide" src="img/svg/close.svg" alt=""></div>
-                </div>
-                <input class="search__btn search--hide" type="submit" value="Найти">
-              </form>
+        </div>
+        <div class="reviews__link-wrapper">
+          <a href="#" class="reviews__link">Все отзывы</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="s-articles">
+    <div class="container">
+      <h2 class="articles__title">Статьи</h2>
+      <div class="articles__wrapper">
+        <div class="articles__item-wrapper">
+          <div class="articles__item">
+
+          </div>
+          <a href="#" class="articles__item-title">Как выбрать матрас и какие матрасы лучше</a>
+        </div>
+        <div class="articles__item-wrapper">
+          <div class="articles__item">
+
+          </div>
+          <a href="#" class="articles__item-title">Матрас для ребенка</a>
+        </div>
+        <div class="articles__item-wrapper">
+          <div class="articles__item">
+
+          </div>
+          <a href="#" class="articles__item-title">Какую подушку выбрать: из пуха или пены?</a>
+        </div>
+        <div class="articles__item-wrapper">
+          <div class="articles__item">
+
+          </div>
+          <a href="#" class="articles__item-title">Какое основание лучше?</a>
+        </div>
+      </div>
+      <div class="articles__link-wrapper">
+        <a href="#" class="articles__link">Узнать больше</a>
+      </div>
+    </div>
+  </section>
+  <section class="s-location">
+    <div class="container">
+      <div class="location">
+        <h2 class="location__title">где нас найти?</h2>
+        <div class="location__inner">
+          <div class="location__branches">
+            <div class="location__branches-titles">
+              <div class="location__branches-title location__branches-title--active">"Гранд-каньон"</div>
+              <div class="location__branches-title">"Мебельный континент"</div>
+              <div class="location__branches-title">"Мебель сити 2"</div>
             </div>
+            <div class="location__branches-info">
+              <a href="tel:+78124253757" class="location__branches-phone">+7 812 425 37 57 доб.14</a>
+              <div class="location__branches-address">
+                м. Проспект Просвещения.
+                ул. Шостаковича д.8, кор. 1, лит. A, 1 этаж, место 120, 122
+              </div>
+            </div>
+            <button class="location__directions">Проложить маршрут</button>
+          </div>
+          <div class="location__map">
+
           </div>
         </div>
       </div>
-      <section class="s-banner">
-        <div class="container">
-          <div class="banner">
-            <div class="banner__navigation banner__navigation--prev"><img class="banner__navigation-icon" src="img/svg/angle.svg" alt=""></div>
-            <div class="banner__navigation banner__navigation--next"><img class="banner__navigation-icon" src="img/svg/angle.svg" alt=""></div>
-            <div class="js-banner">
-              <div class="banner__item">
-                <div class="banner__content">
-                  <div class="banner__body"><span class="banner__title">Кроссовки</span><span class="banner__descr">Отличный подарок бегуну или туристу</span><a class="btn btn--transparent-white btn--round btn--inline" href="">Выбрать </a></div>
-                  <div class="banner__img-wrapper"><img class="banner__img" src="img/png/running.png" alt="Картинка на баннере"></div>
-                </div>
-              </div>
-              <div class="banner__item">
-                <div class="banner__content">
-                  <div class="banner__body"><span class="banner__title">Гантели</span><span class="banner__descr">Отличный подарок детям школьного возраста</span><a class="btn btn--transparent-white btn--round btn--inline" href="">Выбрать </a></div>
-                  <div class="banner__img-wrapper"><img class="banner__img" src="img/png/dumbbell.png" alt="Картинка на баннере"></div>
-                </div>
-              </div>
-              <div class="banner__item">
-                <div class="banner__content">
-                  <div class="banner__body"><span class="banner__title">Скакалка</span><span class="banner__descr">Отличный подарок кому угодно</span><a class="btn btn--transparent-white btn--round btn--inline" href="">Выбрать </a></div>
-                  <div class="banner__img-wrapper"><img class="banner__img" src="img/png/skipping-rope.png" alt="Картинка на баннере"></div>
-                </div>
-              </div>
+    </div>
+  </section>
+  <section class="s-promo">
+    <div class="container">
+      <div class="promo">
+        <div class="promo__subscription">
+          <div class="promo__subscription-text">
+            <h2 class="promo__subscription-title">Будьте в курсе акций и новинок</h2>
+            <p class="promo__subscription-subtitle">Подпишитесь на рассылку</p>
+          </div>
+          <div class="promo__subscription-input-wrapper">
+            <input type="text" class="promo__subscription-input" placeholder="Ваш e-mail">
+            <button class="promo__subscription-btn">Подписаться</button>
+          </div>
+        </div>
+        <div class="promo__installment">
+          <div class="promo__installment-bank">
+            <div class="promo__installment-bank-name">
+              <img src="img/png/bank.png" alt="">
+            </div>
+            <div class="promo__installment-bank-img">
+              <img src="img/svg/promo/card.svg" alt="">
+            </div>
+          </div>
+          <p class="promo__installment-info">
+            <span class="promo__installment-title">0% все товары</span>
+            <span class="promo__installment-subtitle">в рассрочку</span>
+            <span class="promo__installment-text">по кредитным картам</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer__main">
+      <div class="container">
+        <div class="footer__item">
+          <div class="footer__contacts">
+            <p class="footer__contacts-title">Контакты</p>
+            <a href="#" class="footer__shops-link">Магазины</a>
+            <a href="tel:+7 812 425 37 57" class="footer__phone">+7 812 425 37 57</a>
+            <a href="#" class="footer__whatsapp-link">Написать в WhatsApp</a>
+            <div class="footer__social">
+              <a href="#" class="footer__social-link footer__social-link--inst"></a>
+              <a href="#" class="footer__social-link footer__social-link--youtube"></a>
+              <a href="#" class="footer__social-link footer__social-link--fb"></a>
+              <a href="#" class="footer__social-link footer__social-link--vk"></a>
+              <a href="#" class="footer__social-link footer__social-link--ok"></a>
             </div>
           </div>
         </div>
-      </section>
-      <section class="s-advantages"> 
-        <div class="container"> 
-          <div class="advantages">
-            <div class="advantage">
-              <div class="advantage__icon-wrapper"><img class="advantage__icon" src="img/svg/warranty.svg" alt="гарантия"></div>
-              <div class="advantage__body">
-                <div class="advantage__title">Гарантия</div>
-                <div class="advantage__descr">качества всех товаров</div>
-              </div>
-            </div>
-            <div class="advantage">
-              <div class="advantage__icon-wrapper"><img class="advantage__icon" src="img/svg/delivery.svg" alt="доставка"></div>
-              <div class="advantage__body">
-                <div class="advantage__title">Доставка</div>
-                <div class="advantage__descr">по всей России</div>
-              </div>
-            </div>
-            <div class="advantage">
-              <div class="advantage__icon-wrapper"><img class="advantage__icon" src="img/svg/payment.svg" alt="оплата"></div>
-              <div class="advantage__body">
-                <div class="advantage__title">Оплата</div>
-                <div class="advantage__descr">онлайн и наличными       </div>
-              </div>
-            </div>
+        <div class="footer__item">
+          <div class="footer__nav-title">Товары</div>
+          <ul class="footer__nav">
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Матрасы</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Кровати</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Подушки</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Основания</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Текстиль</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Аксессуары</a></li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <div class="footer__nav-title">Покупателям</div>
+          <ul class="footer__nav">
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Как купить</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Доставка</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Гарантия</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Конфиденциальность</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Правовые аспекты</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Подарочный сертификат</a></li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <div class="footer__nav-title">Sleep System</div>
+          <ul class="footer__nav">
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">История компании</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Новости</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Партнёрам</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Вакансии</a></li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <div class="footer__nav-title">Ваша выгода</div>
+          <ul class="footer__nav">
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Акции</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Домашний тест-драйв</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="footer__bottom-item">
+          <a href="#" class="footer__logo">
+            <img src="img/png/footer-logo.png" alt="">
+          </a>
+          <span class="copyright">© Интернет-магазин ортопедических матрасов, подушек, кроватей и аксессуаров для сна,
+            2013–2021</span>
+        </div>
+        <div class="footer__bottom-item">
+          <div class="footer__bottom-info">
+            <span>ИП: Иванов А. А.</span>
+            <span>ИНН: 780500128111</span>
+            <a href="#" class="privacy-policy">Политика конфиденциальности</a>
           </div>
         </div>
-      </section>
-      <section class="s-hits">
-        <div class="container"> 
-          <div class="title-section">Хиты продаж</div>
-          <div class="hits tabs"> 
-            <ul class="tabs-navigation hits-navigation">
-              <li class="tabs-navigation__item tabs-navigation__item--active hits-navigation__item">Хиты продаж</li>
-              <li class="tabs-navigation__item hits-navigation__item">Выгодно</li>
-              <li class="tabs-navigation__item hits-navigation__item">Новинки</li>
-            </ul>
-            <div class="tabs__body hits__body">
-              <div class="tab tab--active">
-                <div class="products-line-slider"> 
-                  <div class="js-products-line-slider"> 
-                    <div class="product-prev"> 
-                      <div class="product-prev__header"> 
-                        <div class="product-prev__slider"> 
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-blue.png" alt="Изображение товара" data-color="rgb(0, 131, 133)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-green.png" alt="Изображение товара" data-color="rgb(0, 143, 68)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-purple.png" alt="Изображение товара" data-color="rgb(173, 50, 194)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-red.png" alt="Изображение товара" data-color="rgb(219, 50, 50)"></div>
-                        </div>
-                      </div>
-                      <div class="product-prev__body"> 
-                        <div class="product-prev__info"><span class="product-prev__title">Футболка беговая</span><span class="product-prev__country">Румыния</span></div>
-                        <div class="product-prev__price"> <span class="product-prev__price-current">499 руб.</span><span class="product-prev__price-old">599 руб. </span></div>
-                        <div class="product-prev__colors"> 
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                        </div>
-                      </div>
-                      <div class="product-prev__footer"> 
-                        <button class="btn">В корзину</button>
-                      </div>
-                    </div>
-                    <div class="product-prev"> 
-                      <div class="product-prev__header"> 
-                        <div class="product-prev__slider"> 
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-purple.png" alt="Изображение товара" data-color="rgb(173, 50, 194)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-blue.png" alt="Изображение товара" data-color="rgb(0, 131, 133)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-red.png" alt="Изображение товара" data-color="rgb(219, 50, 50)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-green.png" alt="Изображение товара" data-color="rgb(0, 143, 68)"></div>
-                        </div>
-                      </div>
-                      <div class="product-prev__body"> 
-                        <div class="product-prev__info"><span class="product-prev__title">Футболка беговая</span><span class="product-prev__country">Румыния</span></div>
-                        <div class="product-prev__price"> <span class="product-prev__price-current">599 руб.</span><span class="product-prev__price-old">699 руб. </span></div>
-                        <div class="product-prev__colors">
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"> </div>
-                        </div>
-                      </div>
-                      <div class="product-prev__footer"> 
-                        <button class="btn">В корзину</button>
-                      </div>
-                    </div>
-                    <div class="product-prev"> 
-                      <div class="product-prev__header"> 
-                        <div class="product-prev__slider"> 
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-green.png" alt="Изображение товара" data-color="rgb(0, 143, 68)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-blue.png" alt="Изображение товара" data-color="rgb(0, 131, 133)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-red.png" alt="Изображение товара" data-color="rgb(219, 50, 50)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-purple.png" alt="Изображение товара" data-color="rgb(173, 50, 194)"></div>
-                        </div>
-                      </div>
-                      <div class="product-prev__body"> 
-                        <div class="product-prev__info"><span class="product-prev__title">Футболка беговая</span><span class="product-prev__country">Румыния</span></div>
-                        <div class="product-prev__price"> <span class="product-prev__price-current">499 руб.</span><span class="product-prev__price-old">599 руб. </span></div>
-                        <div class="product-prev__colors"> 
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                        </div>
-                      </div>
-                      <div class="product-prev__footer"> 
-                        <button class="btn">В корзину</button>
-                      </div>
-                    </div>
-                    <div class="product-prev"> 
-                      <div class="product-prev__header"> 
-                        <div class="product-prev__slider">
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-red.png" alt="Изображение товара" data-color="rgb(219, 50, 50)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-blue.png" alt="Изображение товара" data-color="rgb(0, 131, 133)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-green.png" alt="Изображение товара" data-color="rgb(0, 143, 68)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-purple.png" alt="Изображение товара" data-color="rgb(173, 50, 194)"></div>
-                        </div>
-                      </div>
-                      <div class="product-prev__body"> 
-                        <div class="product-prev__info"><span class="product-prev__title">Футболка беговая</span><span class="product-prev__country">Румыния</span></div>
-                        <div class="product-prev__price"> <span class="product-prev__price-current">499 руб.</span><span class="product-prev__price-old">599 руб. </span></div>
-                        <div class="product-prev__colors"> 
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                        </div>
-                      </div>
-                      <div class="product-prev__footer"> 
-                        <button class="btn">В корзину</button>
-                      </div>
-                    </div>
-                    <div class="product-prev"> 
-                      <div class="product-prev__header"> 
-                        <div class="product-prev__slider"> 
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-blue.png" alt="Изображение товара" data-color="rgb(0, 131, 133)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-green.png" alt="Изображение товара" data-color="rgb(0, 143, 68)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-purple.png" alt="Изображение товара" data-color="rgb(173, 50, 194)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-red.png" alt="Изображение товара" data-color="rgb(219, 50, 50)"></div>
-                        </div>
-                      </div>
-                      <div class="product-prev__body"> 
-                        <div class="product-prev__info"><span class="product-prev__title">Футболка беговая</span><span class="product-prev__country">Румыния</span></div>
-                        <div class="product-prev__price"> <span class="product-prev__price-current">499 руб.</span><span class="product-prev__price-old">599 руб. </span></div>
-                        <div class="product-prev__colors"> 
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                        </div>
-                      </div>
-                      <div class="product-prev__footer"> 
-                        <button class="btn">В корзину</button>
-                      </div>
-                    </div>
-                    <div class="product-prev"> 
-                      <div class="product-prev__header"> 
-                        <div class="product-prev__slider"> 
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-purple.png" alt="Изображение товара" data-color="rgb(173, 50, 194)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-blue.png" alt="Изображение товара" data-color="rgb(0, 131, 133)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-red.png" alt="Изображение товара" data-color="rgb(219, 50, 50)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-green.png" alt="Изображение товара" data-color="rgb(0, 143, 68)"></div>
-                        </div>
-                      </div>
-                      <div class="product-prev__body"> 
-                        <div class="product-prev__info"><span class="product-prev__title">Футболка беговая</span><span class="product-prev__country">Румыния</span></div>
-                        <div class="product-prev__price"> <span class="product-prev__price-current">599 руб.</span><span class="product-prev__price-old">699 руб. </span></div>
-                        <div class="product-prev__colors">
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"> </div>
-                        </div>
-                      </div>
-                      <div class="product-prev__footer"> 
-                        <button class="btn">В корзину</button>
-                      </div>
-                    </div>
-                    <div class="product-prev"> 
-                      <div class="product-prev__header"> 
-                        <div class="product-prev__slider"> 
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-green.png" alt="Изображение товара" data-color="rgb(0, 143, 68)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-blue.png" alt="Изображение товара" data-color="rgb(0, 131, 133)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-red.png" alt="Изображение товара" data-color="rgb(219, 50, 50)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-purple.png" alt="Изображение товара" data-color="rgb(173, 50, 194)"></div>
-                        </div>
-                      </div>
-                      <div class="product-prev__body"> 
-                        <div class="product-prev__info"><span class="product-prev__title">Футболка беговая</span><span class="product-prev__country">Румыния</span></div>
-                        <div class="product-prev__price"> <span class="product-prev__price-current">499 руб.</span><span class="product-prev__price-old">599 руб. </span></div>
-                        <div class="product-prev__colors"> 
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                        </div>
-                      </div>
-                      <div class="product-prev__footer"> 
-                        <button class="btn">В корзину</button>
-                      </div>
-                    </div>
-                    <div class="product-prev"> 
-                      <div class="product-prev__header"> 
-                        <div class="product-prev__slider">
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-red.png" alt="Изображение товара" data-color="rgb(219, 50, 50)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-blue.png" alt="Изображение товара" data-color="rgb(0, 131, 133)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-green.png" alt="Изображение товара" data-color="rgb(0, 143, 68)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-purple.png" alt="Изображение товара" data-color="rgb(173, 50, 194)"></div>
-                        </div>
-                      </div>
-                      <div class="product-prev__body"> 
-                        <div class="product-prev__info"><span class="product-prev__title">Футболка беговая</span><span class="product-prev__country">Румыния</span></div>
-                        <div class="product-prev__price"> <span class="product-prev__price-current">499 руб.</span><span class="product-prev__price-old">599 руб. </span></div>
-                        <div class="product-prev__colors"> 
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                        </div>
-                      </div>
-                      <div class="product-prev__footer"> 
-                        <button class="btn">В корзину</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="products-line-slider__navigation"> 
-                    <div class="products-line-slider__btn products-line-slider__btn--prev"> <img class="products-line-slider__btn-img" src="img/svg/angle-line-slider.svg" alt=""></div>
-                    <div class="products-line-slider__dots"> </div>
-                    <div class="products-line-slider__btn products-line-slider__btn--next"><img class="products-line-slider__btn-img" src="img/svg/angle-line-slider.svg" alt=""></div>
-                  </div>
-                </div>
-              </div>
-              <div class="tab"> 
-                <div class="products-line-slider"> 
-                  <div class="js-products-line-slider"> 
-                    <div class="product-prev"> 
-                      <div class="product-prev__header"> 
-                        <div class="product-prev__slider"> 
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-blue.png" alt="Изображение товара" data-color="rgb(0, 131, 133)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-green.png" alt="Изображение товара" data-color="rgb(0, 143, 68)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-purple.png" alt="Изображение товара" data-color="rgb(173, 50, 194)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-red.png" alt="Изображение товара" data-color="rgb(219, 50, 50)"></div>
-                        </div>
-                      </div>
-                      <div class="product-prev__body"> 
-                        <div class="product-prev__info"><span class="product-prev__title">Футболка беговая</span><span class="product-prev__country">Румыния</span></div>
-                        <div class="product-prev__price"> <span class="product-prev__price-current">499 руб.</span><span class="product-prev__price-old">599 руб. </span></div>
-                        <div class="product-prev__colors"> 
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                        </div>
-                      </div>
-                      <div class="product-prev__footer"> 
-                        <button class="btn">В корзину</button>
-                      </div>
-                    </div>
-                    <div class="product-prev"> 
-                      <div class="product-prev__header"> 
-                        <div class="product-prev__slider"> 
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-purple.png" alt="Изображение товара" data-color="rgb(173, 50, 194)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-blue.png" alt="Изображение товара" data-color="rgb(0, 131, 133)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-red.png" alt="Изображение товара" data-color="rgb(219, 50, 50)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-green.png" alt="Изображение товара" data-color="rgb(0, 143, 68)"></div>
-                        </div>
-                      </div>
-                      <div class="product-prev__body"> 
-                        <div class="product-prev__info"><span class="product-prev__title">Футболка беговая</span><span class="product-prev__country">Румыния</span></div>
-                        <div class="product-prev__price"> <span class="product-prev__price-current">599 руб.</span><span class="product-prev__price-old">699 руб. </span></div>
-                        <div class="product-prev__colors">
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"> </div>
-                        </div>
-                      </div>
-                      <div class="product-prev__footer"> 
-                        <button class="btn">В корзину</button>
-                      </div>
-                    </div>
-                    <div class="product-prev"> 
-                      <div class="product-prev__header"> 
-                        <div class="product-prev__slider"> 
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-green.png" alt="Изображение товара" data-color="rgb(0, 143, 68)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-blue.png" alt="Изображение товара" data-color="rgb(0, 131, 133)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-red.png" alt="Изображение товара" data-color="rgb(219, 50, 50)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-purple.png" alt="Изображение товара" data-color="rgb(173, 50, 194)"></div>
-                        </div>
-                      </div>
-                      <div class="product-prev__body"> 
-                        <div class="product-prev__info"><span class="product-prev__title">Футболка беговая</span><span class="product-prev__country">Румыния</span></div>
-                        <div class="product-prev__price"> <span class="product-prev__price-current">499 руб.</span><span class="product-prev__price-old">599 руб. </span></div>
-                        <div class="product-prev__colors"> 
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                        </div>
-                      </div>
-                      <div class="product-prev__footer"> 
-                        <button class="btn">В корзину</button>
-                      </div>
-                    </div>
-                    <div class="product-prev"> 
-                      <div class="product-prev__header"> 
-                        <div class="product-prev__slider">
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-red.png" alt="Изображение товара" data-color="rgb(219, 50, 50)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-blue.png" alt="Изображение товара" data-color="rgb(0, 131, 133)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-green.png" alt="Изображение товара" data-color="rgb(0, 143, 68)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-purple.png" alt="Изображение товара" data-color="rgb(173, 50, 194)"></div>
-                        </div>
-                      </div>
-                      <div class="product-prev__body"> 
-                        <div class="product-prev__info"><span class="product-prev__title">Футболка беговая</span><span class="product-prev__country">Румыния</span></div>
-                        <div class="product-prev__price"> <span class="product-prev__price-current">499 руб.</span><span class="product-prev__price-old">599 руб. </span></div>
-                        <div class="product-prev__colors"> 
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                        </div>
-                      </div>
-                      <div class="product-prev__footer"> 
-                        <button class="btn">В корзину</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="products-line-slider__navigation"> 
-                    <div class="products-line-slider__btn products-line-slider__btn--prev"> <img class="products-line-slider__btn-img" src="img/svg/angle-line-slider.svg" alt=""></div>
-                    <div class="products-line-slider__dots"> </div>
-                    <div class="products-line-slider__btn products-line-slider__btn--next"><img class="products-line-slider__btn-img" src="img/svg/angle-line-slider.svg" alt=""></div>
-                  </div>
-                </div>
-              </div>
-              <div class="tab"> 
-                <div class="products-line-slider"> 
-                  <div class="js-products-line-slider"> 
-                    <div class="product-prev"> 
-                      <div class="product-prev__header"> 
-                        <div class="product-prev__slider"> 
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-blue.png" alt="Изображение товара" data-color="rgb(0, 131, 133)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-green.png" alt="Изображение товара" data-color="rgb(0, 143, 68)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-purple.png" alt="Изображение товара" data-color="rgb(173, 50, 194)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-red.png" alt="Изображение товара" data-color="rgb(219, 50, 50)"></div>
-                        </div>
-                      </div>
-                      <div class="product-prev__body"> 
-                        <div class="product-prev__info"><span class="product-prev__title">Футболка беговая</span><span class="product-prev__country">Румыния</span></div>
-                        <div class="product-prev__price"> <span class="product-prev__price-current">499 руб.</span><span class="product-prev__price-old">599 руб. </span></div>
-                        <div class="product-prev__colors"> 
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                        </div>
-                      </div>
-                      <div class="product-prev__footer"> 
-                        <button class="btn">В корзину</button>
-                      </div>
-                    </div>
-                    <div class="product-prev"> 
-                      <div class="product-prev__header"> 
-                        <div class="product-prev__slider"> 
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-purple.png" alt="Изображение товара" data-color="rgb(173, 50, 194)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-blue.png" alt="Изображение товара" data-color="rgb(0, 131, 133)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-red.png" alt="Изображение товара" data-color="rgb(219, 50, 50)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-green.png" alt="Изображение товара" data-color="rgb(0, 143, 68)"></div>
-                        </div>
-                      </div>
-                      <div class="product-prev__body"> 
-                        <div class="product-prev__info"><span class="product-prev__title">Футболка беговая</span><span class="product-prev__country">Румыния</span></div>
-                        <div class="product-prev__price"> <span class="product-prev__price-current">599 руб.</span><span class="product-prev__price-old">699 руб. </span></div>
-                        <div class="product-prev__colors">
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"> </div>
-                        </div>
-                      </div>
-                      <div class="product-prev__footer"> 
-                        <button class="btn">В корзину</button>
-                      </div>
-                    </div>
-                    <div class="product-prev"> 
-                      <div class="product-prev__header"> 
-                        <div class="product-prev__slider"> 
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-green.png" alt="Изображение товара" data-color="rgb(0, 143, 68)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-blue.png" alt="Изображение товара" data-color="rgb(0, 131, 133)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-red.png" alt="Изображение товара" data-color="rgb(219, 50, 50)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-purple.png" alt="Изображение товара" data-color="rgb(173, 50, 194)"></div>
-                        </div>
-                      </div>
-                      <div class="product-prev__body"> 
-                        <div class="product-prev__info"><span class="product-prev__title">Футболка беговая</span><span class="product-prev__country">Румыния</span></div>
-                        <div class="product-prev__price"> <span class="product-prev__price-current">499 руб.</span><span class="product-prev__price-old">599 руб. </span></div>
-                        <div class="product-prev__colors"> 
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                        </div>
-                      </div>
-                      <div class="product-prev__footer"> 
-                        <button class="btn">В корзину</button>
-                      </div>
-                    </div>
-                    <div class="product-prev"> 
-                      <div class="product-prev__header"> 
-                        <div class="product-prev__slider">
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-red.png" alt="Изображение товара" data-color="rgb(219, 50, 50)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-blue.png" alt="Изображение товара" data-color="rgb(0, 131, 133)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-green.png" alt="Изображение товара" data-color="rgb(0, 143, 68)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-purple.png" alt="Изображение товара" data-color="rgb(173, 50, 194)"></div>
-                        </div>
-                      </div>
-                      <div class="product-prev__body"> 
-                        <div class="product-prev__info"><span class="product-prev__title">Футболка беговая</span><span class="product-prev__country">Румыния</span></div>
-                        <div class="product-prev__price"> <span class="product-prev__price-current">499 руб.</span><span class="product-prev__price-old">599 руб. </span></div>
-                        <div class="product-prev__colors"> 
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                        </div>
-                      </div>
-                      <div class="product-prev__footer"> 
-                        <button class="btn">В корзину</button>
-                      </div>
-                    </div>
-                    <div class="product-prev"> 
-                      <div class="product-prev__header"> 
-                        <div class="product-prev__slider"> 
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-purple.png" alt="Изображение товара" data-color="rgb(173, 50, 194)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-blue.png" alt="Изображение товара" data-color="rgb(0, 131, 133)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-red.png" alt="Изображение товара" data-color="rgb(219, 50, 50)"></div>
-                          <div class="product-prev__img-wrapper"><img class="product-prev__img" src="img/png/products/tee-shirt-green.png" alt="Изображение товара" data-color="rgb(0, 143, 68)"></div>
-                        </div>
-                      </div>
-                      <div class="product-prev__body"> 
-                        <div class="product-prev__info"><span class="product-prev__title">Футболка беговая</span><span class="product-prev__country">Румыния</span></div>
-                        <div class="product-prev__price"> <span class="product-prev__price-current">599 руб.</span><span class="product-prev__price-old">699 руб. </span></div>
-                        <div class="product-prev__colors">
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"></div>
-                          <div class="product-prev__color"> </div>
-                        </div>
-                      </div>
-                      <div class="product-prev__footer"> 
-                        <button class="btn">В корзину</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="products-line-slider__navigation"> 
-                    <div class="products-line-slider__btn products-line-slider__btn--prev"> <img class="products-line-slider__btn-img" src="img/svg/angle-line-slider.svg" alt=""></div>
-                    <div class="products-line-slider__dots"> </div>
-                    <div class="products-line-slider__btn products-line-slider__btn--next"><img class="products-line-slider__btn-img" src="img/svg/angle-line-slider.svg" alt=""></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="footer__bottom-item">
+          <a href="#" class="yandex-market-link">
+            <img src="img/png/yandex.png" alt="логотип яндекс-маркет">
+          </a>
         </div>
-      </section>
-      <section class="s-information s-light-bg">
-        <div class="container"> 
-          <div class="information">
-            <div class="information-item">
-              <div class="information-item__header"> 
-                <h2 class="title-section">Новости</h2>
-              </div>
-              <div class="information-item__body">
-                <div class="news-prev__wrapper"> <a class="news-prev" href="#">
-                    <div class="news-prev__img" style="background-image:url('img/content/news/news-1.jpg')"></div>
-                    <div class="news-prev__body"> <span class="news-prev__title">Большое поступление кругов</span><span class="news-prev__date">24 июня 2021</span></div></a><a class="news-prev" href="#">
-                    <div class="news-prev__img" style="background-image:url('img/content/news/news-2.jpg')"></div>
-                    <div class="news-prev__body"> <span class="news-prev__title">Грядёт распродажа кроссовок</span><span class="news-prev__date">12 июля 2021</span></div></a></div>
-              </div>
-              <div class="information-item__footer"> <a class="information-item__link" href="#">Все новости </a></div>
-            </div>
-            <div class="information__item"> 
-              <div class="information-item__header">
-                <h2 class="title-section">Отзывы</h2>
-              </div>
-              <div class="information-item__body">
-                <div class="review-prev">
-                  <p class="review-prev__text">Только что получил футболку. Были опасения, что не попаду в размер. Взял L - села идеально. Цвет даже ярче, чем на картинке - французская роза. Футболка высокого качества, цвет не застирывается. Размеры и рост соответствуют. В целом - заказом доволен, буду заказывать ещё. Я счастлив </p><span class="review-prev__author">Валерка</span>
-                </div>
-              </div>
-              <div class="information-item__footer"><a class="information-item__link" href="#">Все отзывы</a></div>
-            </div>
-            <div class="information__item"> 
-              <div class="information-item__header">
-                <h2 class="title-section">Бренды</h2>
-              </div>
-              <div class="information-item__body">
-                <div class="brands__wrapper">
-                  <ul class="brands__list--small"> 
-                    <li class="brands__item"><a class="brand" href="#">
-                        <div class="brand__img-wrapper"><img class="brand__img" src="img/content/brands/merrell-logo.svg"><img class="brand__img-hover" src="img/content/brands/merrell-logo-hover.svg"></div></a></li>
-                    <li class="brands__item"><a class="brand" href="#">
-                        <div class="brand__img-wrapper"><img class="brand__img" src="img/content/brands/columbia-logo.svg"><img class="brand__img-hover" src="img/content/brands/columbia-logo-hover.svg"></div></a></li>
-                    <li class="brands__item"><a class="brand" href="#">
-                        <div class="brand__img-wrapper"><img class="brand__img" src="img/content/brands/stern-logo.svg"><img class="brand__img-hover" src="img/content/brands/stern-logo-hover.svg"></div></a></li>
-                    <li class="brands__item"><a class="brand" href="#">
-                        <div class="brand__img-wrapper"><img class="brand__img" src="img/content/brands/salomon-logo.svg"><img class="brand__img-hover" src="img/content/brands/salomon-logo-hover.svg"></div></a></li>
-                    <li class="brands__item"><a class="brand" href="#">
-                        <div class="brand__img-wrapper"><img class="brand__img" src="img/content/brands/demix-logo.svg"><img class="brand__img-hover" src="img/content/brands/demix-logo-hover.svg"></div></a></li>
-                    <li class="brands__item"><a class="brand" href="#">
-                        <div class="brand__img-wrapper"><img class="brand__img" src="img/content/brands/outventure-logo.svg"><img class="brand__img-hover" src="img/content/brands/outventure-logo-hover.svg"></div></a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="information-item__footer"><a class="information-item__link" href="brands.html">Все бренды</a></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="s-about"> 
-        <div class="container"> 
-          <h2 class="title-section">О нас</h2>
-          <div class="about tabs"> 
-            <ul class="tabs-navigation about-navigation">
-              <li class="tabs-navigation__item tabs-navigation__item--active about-navigation__item">Интернет-магазин</li>
-              <li class="tabs-navigation__item about-navigation__item">Наши преимущества</li>
-              <li class="tabs-navigation__item about-navigation__item">Сервис</li>
-              <li class="tabs-navigation__item about-navigation__item">Доставка</li>
-            </ul>
-            <div class="tabs__body about__body">
-              <div class="tab tab--active">
-                <p class="text">Интернет-магазин Физкульт-мастер предлагает широчайший выбор спортивного инвентаря. В каталоге представлена продукция ведущих производителей по вполне приемлемым ценам. У нас вы найдете спортивную одежду, обувь, оборудование и снаряжение для любого возраста и любых погодных условий. Вы получаете товар, мы получаем деньги, и все счастливы! Интернет-магазин Физкульт-мастер предлагает широчайший выбор спортивного инвентаря. В каталоге представлена продукция ведущих производителей по вполне приемлемым ценам. У нас вы найдете спортивную одежду, обувь, оборудование и снаряжение для любого возраста и любых погодных условий. Вы получаете товар, мы получаем деньги, и все счастливы! </p>
-              </div>
-              <div class="tab"> 
-                <p class="text">Преимуществ у нас немало. Интернет-магазин Физкульт-мастер предлагает широчайший выбор спортивного инвентаря. В каталоге представлена продукция ведущих производителей по вполне приемлемым ценам. У нас вы найдете спортивную одежду, обувь, оборудование и снаряжение для любого возраста и любых погодных условий. Вы получаете товар, мы получаем деньги, и все счастливы!</p>
-              </div>
-              <div class="tab">
-                <p class="text">Наш сервис вас приятно удивит, поскольку интернет-магазин Физкульт-мастер предлагает широчайший выбор спортивного инвентаря. В каталоге представлена продукция ведущих производителей по вполне приемлемым ценам. У нас вы найдете спортивную одежду, обувь, оборудование и снаряжение для любого возраста и любых погодных условий. Вы получаете товар, мы получаем деньги, и все счастливы!</p>
-              </div>
-              <div class="tab"> 
-                <p class="text">Доставка осуществляется максимально быстро в любую точку нашей Родины, как, впрочем, и ближнего зарубежья, ведь интернет-магазин Физкульт-мастер предлагает широчайший выбор спортивного инвентаря. В каталоге представлена продукция ведущих производителей по вполне приемлемым ценам. У нас вы найдете спортивную одежду, обувь, оборудование и снаряжение для любого возраста и любых погодных условий. Вы получаете товар, мы получаем деньги, и все счастливы!</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <footer class="footer"> 
-        <div class="footer__main"> 
-          <div class="container"> 
-            <div class="footer__item"> 
-              <ul class="footer__nav"> 
-                      <li class="footer-nav__item"> <a class="footer-nav__link" href="link">Одежда</a></li>
-                      <li class="footer-nav__item"> <a class="footer-nav__link" href="link">Обувь</a></li>
-                      <li class="footer-nav__item"> <a class="footer-nav__link" href="link">Детям</a></li>
-                      <li class="footer-nav__item"> <a class="footer-nav__link" href="link">Тренажеры</a></li>
-                      <li class="footer-nav__item"> <a class="footer-nav__link" href="link">Экипировка</a></li>
-                      <li class="footer-nav__item"> <a class="footer-nav__link" href="link">Туризм</a></li>
-                      <li class="footer-nav__item"> <a class="footer-nav__link" href="link">Аксессуары</a></li>
-              </ul>
-            </div>
-            <div class="footer__item"> 
-              <ul class="footer__nav"> 
-                      <li class="footer-nav__item"> <a class="footer-nav__link" href="link">О компании</a></li>
-                      <li class="footer-nav__item"> <a class="footer-nav__link" href="link">Доставка</a></li>
-                      <li class="footer-nav__item"> <a class="footer-nav__link" href="link">Оплата</a></li>
-                      <li class="footer-nav__item"> <a class="footer-nav__link" href="link">Поставщикам</a></li>
-                      <li class="footer-nav__item"> <a class="footer-nav__link" href="link">Новости</a></li>
-                      <li class="footer-nav__item"> <a class="footer-nav__link" href="link">Отзывы</a></li>
-              </ul>
-            </div>
-            <div class="footer__item"> 
-              <ul class="footer__nav"> 
-                      <li class="footer-nav__item"> <a class="footer-nav__link" href="link">Контакты</a></li>
-                      <li class="footer-nav__item"> <a class="footer-nav__link" href="link">Вопросы и ответы</a></li>
-                      <li class="footer-nav__item"> <a class="footer-nav__link" href="link">Карта сайта</a></li>
-              </ul><span class="footer__address">Байбышевск, ул. Схалазменского 12</span>
-            </div>
-            <div class="footer__contacts">
-              <div class="footer__phones"> <a class="footer__phone" href="tel:80955951119">8(095) 595-11-19</a><span class="footer__text">Звонок бесплатный</span><span class="footer__text">8(095) 595-11-18</span></div><a class="footer__mail" href="mailto:fizkult-master@fm.com">fizkult-master@privet.com</a>
-            </div>
-            <div class="footer__contacts-mobile"> 
-              <div class="footer__item">
-                <div class="footer__phones"> <a class="footer__phone" href="tel:80955951119">8(095) 595-11-19</a><span class="footer__text">Звонок бесплатный</span></div>
-              </div>
-              <div class="footer__item"><span class="footer__text">8(095) 595-11-18</span><a class="footer__mail" href="mailto:fizkult-master@fm.com">fizkult-master@privet.com</a></div>
-              <div class="footer__item">
-                <div class="yandex-market"><img src="img/png/yandex-market.png" alt="иконка яндекс маркета"><a class="btn" href="">Оставить отзыв</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="footer__socials">
-          <div class="container">
-            <ul class="socials"> 
-              <li class="socials__icon"> <a class="socials__link" href=""><img src="img/svg/icons-social/icon-vk.svg" alt="иконка Вконтакте"><span class="socials__name">Вконтакте</span></a></li>
-              <li class="socials__icon"> <a class="socials__link" href=""><img src="img/svg/icons-social/icon-youtube.svg" alt="иконка Youtube"><span class="socials__name">YouTube</span></a></li>
-              <li class="socials__icon"> <a class="socials__link" href=""><img src="img/svg/icons-social/icon-inst.svg" alt="иконка Instagram"><span class="socials__name">Instagram</span></a></li>
-              <li class="socials__icon"> <a class="socials__link" href=""><img src="img/svg/icons-social/icon-fb.svg" alt="иконка Facebook"><span class="socials__name">Facebook</span></a></li>
-            </ul>
-            <div class="yandex-market"><img src="img/png/yandex-market.png" alt="иконка яндекс маркета"><a class="btn" href="">Оставить отзыв  </a></div>
-          </div>
-        </div>
-        <div class="footer__bottom">
-          <div class="container"><span class="copyright">2021. Физкульт-мастер. Почти все права защищены.</span><a class="footer__personal-data" href="">Политика обработки персональных данных</a></div>
-        </div>
-      </footer>
-    </header>
-    <script src="js/libs.min.js"></script>
-    <script src="js/main.js"> </script>
-  </body>
+      </div>
+    </div>
+  </footer> -->
+
+  <script src="js/main.min.js"> </script>
+</body>
+
 </html>
